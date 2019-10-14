@@ -1,8 +1,8 @@
 @charset "UTF-8";
 body {
 	font-family: Helvetica;
-  font-size: 14px;
-  line-height: 20px;
+  	font-size: 14px;
+  	line-height: 20px;
 	background-color: #000000;
 	margin-top: 130px;
 	margin-right: 100px;
@@ -10,5 +10,14 @@ body {
 	margin-left: 100px;
 	font-style: normal;
 	font-weight: 200;
-  color: #F5F5F5;
+  	color: #F5F5F5;
+	}
+
+.container {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	height: auto;
+	background-color: #000000;
 }
