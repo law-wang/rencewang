@@ -11,7 +11,7 @@ body {
 	font-style: normal;
 	font-weight: 200;
   	color: #F5F5F5;
-	}
+}
 
 .container {
 	width: 50%;
@@ -32,4 +32,20 @@ body {
 	padding-right: 0px;
 	padding-bottom: 0px;
 	padding-left: 0px;
+}
+
+a.nav-link:link
+{
+   color: #f2f2f2;
+   text-decoration: none;
+}
+a.nav-link:visited
+{
+   color: #f2f2f2;
+   text-decoration: none;
+}
+a.nav-link:hover
+{
+   color: #999999;
+   text-decoration: none;
 }
