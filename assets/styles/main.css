@@ -4,9 +4,9 @@ body {
   	font-size: 14px;
   	line-height: 20px;
 	background-color: #000000;
-	margin-top: 130px;
+	margin-top: 200px;
 	/*margin-right: 100px;*/
-	margin-bottom: 230px;
+	margin-bottom: 200px;
 	/*margin-left: 100px;*/
 	font-style: normal;
 	font-weight: 500;
@@ -26,6 +26,8 @@ body {
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
 	height: auto;
 	background-color: #000000;
 	}
@@ -33,9 +35,9 @@ body {
 
 .text_column {
 	width: 90%;
-	margin-top: 30px;
+	margin-top: 0px;
 	margin-right: auto;
-	margin-bottom: 20px;
+	margin-bottom: 0px;
 	margin-left: auto;
 	padding-top: 0px;
 	padding-right: 0px;
