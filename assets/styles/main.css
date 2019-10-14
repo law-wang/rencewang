@@ -34,18 +34,20 @@ body {
 	padding-left: 0px;
 }
 
-a.nav-link:link
-{
-   color: #f2f2f2;
-   text-decoration: none;
+a:link {
+  color: #f2f2f2;
 }
-a.nav-link:visited
-{
-   color: #f2f2f2;
-   text-decoration: none;
+a:visited {
+  color: #f2f2f2;
 }
-a.nav-link:hover
-{
-   color: #999999;
-   text-decoration: none;
+
+a:hover {
+  color: #999999;
+  text-decoration: underline;
 }
+
+a:active {
+  color: #f2f2f2;
+}
+
+
