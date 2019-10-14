@@ -3,7 +3,7 @@ body {
 	font-family: Helvetica;
   	font-size: 14px;
   	line-height: 20px;
-	background-color: #000000;
+	background-color: rgba(0,0,0,0.5);
 	margin-top: 200px;
 	/*margin-right: 100px;*/
 	margin-bottom: 200px;
