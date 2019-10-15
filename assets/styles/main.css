@@ -1,6 +1,7 @@
+ @import url("https://use.typekit.net/xbv3jvp.css");
 
 body {
-	font-family: Helvetica;
+	font-family: nimbus-sans, sans-serif;
   	font-size: 14px;
   	line-height: 20px;
 	background-color: rgba(0,0,0,0.5);
