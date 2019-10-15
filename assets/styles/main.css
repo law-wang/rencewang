@@ -11,10 +11,10 @@ body {
 	/*margin-left: 100px;*/
 	font-style: normal;
 	font-weight: 500;
-  	color: #F5F5F5;
+  	color: #FFFFFF;
 }
 
-.highlight { background-color: #9999ff; }
+.highlight { background-color: #e6e6e6; }
 
 .container {
 	width: 50%;
