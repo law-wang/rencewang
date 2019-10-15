@@ -134,9 +134,17 @@ a:active {
 }
 
 .responsive {
-  margin-left: 0;
+  min-width: 100%; 
+  min-height: 100%; 
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  /*margin-left: 0;
   margin-right: 0;
   margin-top: 0;
-  width: 100%;
+  width: 100%;*/
 }
 
