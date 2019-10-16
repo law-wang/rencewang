@@ -74,7 +74,7 @@ a {
     background-size: 4px 2px;
   color: #ff99cc;
   text-decoration: none;
-  transition: background-size .2s;
+  transition: background-size .5s;
 }
 
 a:hover {
