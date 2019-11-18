@@ -1,8 +1,8 @@
 @import url("https://use.typekit.net/xbv3jvp.css");
 
 body {
-	font-family: "neue-haas-unica", Helvetica;
-		font-style: normal;
+	font-family: "neue-haas-unica", san-serif;
+		font-weight: 600;
 		font-size: 14px;
   	line-height: 20px;
 	background-color: #2e2e2e;
@@ -53,10 +53,10 @@ body {
 	font-style: normal;
 	font-family: "jaf-lapture", serif;
 	font-weight: 400;
-	font-style: normal;*/
+	font-style: normal;
 	font-family: "soleil", sans-serif;
 	font-weight: 400;
-	font-style: normal;
+	font-style: normal;*/
 	width: 50%;
 	margin-left: auto;
 	margin-right: 5%;
@@ -89,9 +89,32 @@ body {
 }
 .blogpost {
 	margin-top: 0;
-	margin-left: auto;
+	margin-left: 0;
 	margin-right: auto;
-	width: 80%;
+	width: 90%;
+}
+.threecolumns quoteblock {
+	padding: 1em;
+	quotes: "“""”""‘""’";
+}
+.threecolumns quoteblock:before {
+    content: open-quote;
+    font-size: 3.5em;
+    position: relative;
+    display: inline;
+    top: 20px;
+    left: -3px;
+    color: #f8c779;
+}
+.threecolumns quoteblock:after {
+    content: close-quote;
+    font-size: 3.5em;
+    position: relative;
+    display: inline;
+    top: 30px;
+    left: 5px;
+    color: #f8c779;
+    line-height: 10px;
 }
 /*.blogpost h2, h3 {
     display: inline;
@@ -201,6 +224,27 @@ a {
 
 a:hover {
   background-size: 4px 50px;
+}
+
+a.glowlink {
+    border: 0;
+    text-decoration: none;
+}
+.glowlink h2 {
+    text-decoration: none;
+    color: #fff;
+		font-family: "rig-solid-bold-fill", sans-serif;
+			font-weight: 700;
+			font-style: normal;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.glowlink:hover h2 {
+    color: #f47b3e;
+    text-shadow: 0 0 20px #f47b3e;
 }
 
 .responsive {
