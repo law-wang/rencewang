@@ -12,8 +12,7 @@ body {
 	/*margin-left: 100px;*/
 	font-style: normal;
 	font-weight: 500;
-  	color: #fff;
-}
+  	color: #fff;}
 
 .overall {
 	position: absolute;
@@ -24,26 +23,21 @@ body {
 	flex-wrap: wrap;
 	vertical-align: center;
 	align-items: center;
-	box-sizing: border-box !important;
-}
+	box-sizing: border-box !important;}
 
+/* Float Boxes */
 #header {
 	margin-top: 100px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	width: 100%;
-}
-
+	width: 100%;}
 #about {
   float: right ;
-	width: 40% ;
-}
-
+	width: 40% ;}
 #blog {
   float: right;
-  width: 60%;
-}
+  width: 60%;}
 
 .containerabout {
 	font-family: "jaf-lapture", serif;
@@ -54,63 +48,46 @@ body {
 	margin-right: 5%;
 	margin-top: 5%;
 	height: auto;
-	background-color: rgba(0,0,0,0.0);
-}
-
+	background-color: rgba(0,0,0,0.0);}
 .containerblog {
 	width: 80%;
 	margin-left: 0;
 	margin-right: auto;
 	margin-top: 3%;
 	height: auto;
-	background-color: rgba(0,0,0,0.0);
-}
+	background-color: rgba(0,0,0,0.0);}
 
 .threecolumns {
 	float: right;
 	width: 50%;
-}
-.threecolumns p {
 	font-family: "whitman-display", serif;
 	font-weight: 500;
 	font-style: italic;
-	font-family: serif;
-	font-size: 1em;
-}
+	font-size: 1em;}
 .threecolumns h2 {
 	font-family: "rig-solid-bold-fill", sans-serif;
 		font-weight: 700;
-		font-style: normal;
-}
+		font-style: normal;}
+
 .blogpost {
 	margin-top: 0;
 	margin-left: 0;
 	margin-right: auto;
-	width: 90%;
-}
-.threecolumns quoteblock {
-	padding: 1em;
-	quotes: "“""”""‘""’";
-}
-.threecolumns quoteblock:before {
+	width: 90%;}
+.blogpost quoteblock {
+	font-family: "whitman-display", serif;
+	font-weight: 500;
+	font-style: italic;
+	font-size: 1em;
+	quotes: "“""”""‘""’";}
+.blogpost quoteblock:before {
     content: open-quote;
     font-size: 3.5em;
     position: relative;
     display: inline;
     top: 20px;
     left: -3px;
-    color: #f8c779;
-}
-.threecolumns quoteblock:after {
-    content: close-quote;
-    font-size: 3.5em;
-    position: relative;
-    display: inline;
-    top: 30px;
-    left: 5px;
-    color: #f8c779;
-    line-height: 10px;
-}
+    color: #f47b3e;}
 
 /* For Flexible Display*/
 @media only screen and (max-width: 1200px) {
@@ -139,7 +116,6 @@ body {
 		background-color: rgba(0,0,0,0.0);
 		}
 }
-
 @media only screen and (max-width: 700px) {
 	.containerabout {
 		width: 80%;
