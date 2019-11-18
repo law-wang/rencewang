@@ -46,17 +46,9 @@ body {
 }
 
 .containerabout {
-	/*font-family: "acumin-pro";
-		font-weight: 700;
-	font-family: "orpheuspro", serif;
+	font-family: "jaf-lapture", serif;
 	font-weight: 700;
 	font-style: normal;
-	font-family: "jaf-lapture", serif;
-	font-weight: 400;
-	font-style: normal;
-	font-family: "soleil", sans-serif;
-	font-weight: 400;
-	font-style: normal;*/
 	width: 50%;
 	margin-left: auto;
 	margin-right: 5%;
@@ -79,6 +71,9 @@ body {
 	width: 50%;
 }
 .threecolumns p {
+	font-family: "whitman-display", serif;
+	font-weight: 500;
+	font-style: normal;
 	font-family: serif;
 	font-size: 1em;
 }
@@ -130,7 +125,7 @@ body {
 		width: 100% ;
 	}
 	.containerabout {
-		width: 40%;
+		width: 60%;
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 3%;
@@ -221,10 +216,28 @@ a {
   text-decoration: none;
   transition: background-size .5s;
 }
-
-a:hover {
-  background-size: 4px 50px;
+.text_column_top a{
+	font-family: "Acumin-Pro";
+	font-weight: 700;
+	font-style: italic;
+	text-decoration: none;
+	background: none;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	-ms-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	transition: all .3s linear;
 }
+.text_column_top a:hover {
+	color: #f47b3e;
+	text-shadow: 0 0 20px #f47b3e;
+}
+
+.socialmedia a{
+	border: 0;
+	text-decoration: none;}
+.socialmedia a:hover {
+  background-size: 4px 50px;}
 
 a.glowlink {
     border: 0;
