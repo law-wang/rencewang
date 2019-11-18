@@ -58,14 +58,16 @@ body {
 	width: 50%;
 	margin-left: 0;
 	margin-right: auto;
-	margin-top: 3%;
+	margin-top: 0;
 	height: auto;
 	background-color: rgba(0,0,0,0.0);
 }
 
 .blogpost {
+	margin-top: 0;
 	float: right;
-	width: 40%;
+	width: 33%;
+	margin-right: 10px;
 }
 .blogpost p {
 	font-family: serif;
@@ -76,6 +78,9 @@ body {
 	font-weight: 700;
 	font-style: normal;
 }
+/*.blogpost h2, h3 {
+    display: inline;
+}*/
 
 @media only screen and (max-width: 1200px) {
 	#about {
