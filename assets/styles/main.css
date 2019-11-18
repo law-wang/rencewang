@@ -47,7 +47,7 @@ body {
 
 .containerabout {
 	font-family: "jaf-lapture", serif;
-	font-weight: 700;
+	font-weight: 600;
 	font-style: normal;
 	width: 50%;
 	margin-left: auto;
@@ -73,7 +73,7 @@ body {
 .threecolumns p {
 	font-family: "whitman-display", serif;
 	font-weight: 500;
-	font-style: normal;
+	font-style: italic;
 	font-family: serif;
 	font-size: 1em;
 }
