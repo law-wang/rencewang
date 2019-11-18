@@ -67,6 +67,15 @@ body {
 	float: right;
 	width: 40%;
 }
+.blogpost p {
+	font-family: serif;
+	font-size: 1em;
+}
+.blogpost h2 {
+	font-family: "rig-solid-bold-fill", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
 
 @media only screen and (max-width: 1200px) {
 	#about {
