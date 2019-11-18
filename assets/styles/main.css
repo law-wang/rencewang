@@ -1,7 +1,7 @@
 @import url("https://use.typekit.net/xbv3jvp.css");
 
 body {
-	font-family: nimbus-sans, sans-serif;
+	font-family: "nimbus-sans", san-serif;
   	font-size: 14px;
   	line-height: 20px;
 	background-color: #2e2e2e;
@@ -62,8 +62,8 @@ body {
 	padding-bottom: 30px;
 	padding-left: 0px;
 }
-.highlight { 
-	background-color: #f47b3e; 
+.highlight {
+	background-color: #f47b3e;
 }
 
 /* for links*/
@@ -89,7 +89,7 @@ a:hover {
 
 .responsive {
   /*min-width: 100%;*/
-  min-height: 100%; 
+  min-height: 100%;
   width: auto;
   height: auto;
   position: absolute;
@@ -101,4 +101,3 @@ a:hover {
   margin-top: 0;
   width: 100%;*/
 }
-
