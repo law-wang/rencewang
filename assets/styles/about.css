@@ -5,14 +5,14 @@ body {
 		font-weight: 600;
 		font-size: 14px;
   	line-height: 20px;
-	background-color: #2e2e2e;
+	background-color: #f8f8f8;
 	margin-top: 200px;
 	/*margin-right: 100px;*/
 	margin-bottom: 200px;
 	/*margin-left: 100px;*/
 	font-style: normal;
 	font-weight: 500;
-  	color: #fff;}
+  	color: #000;}
 
 .overall {
 	position: absolute;
