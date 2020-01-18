@@ -34,7 +34,8 @@ body {
 	margin-bottom: 10px;
 	width: 100%;}
 #header a {
-	text-decoration: none;
+	text-decoration: none !important;
+	box-shadow: none;
 	color: rgba(0,0,0,0.0);
 }
 #header img{
@@ -44,6 +45,7 @@ body {
    border-width: 0px;
    outline-width:0px;
    border-bottom: none;
+	 box-shadow: none;
 }
 #about {
   float: right ;
@@ -205,11 +207,11 @@ body {
   --mainColor: #595959;
 }
 a {
-  background:
+  /*background:
      linear-gradient(
        to bottom, var(--mainColor) 0%,
        var(--mainColor) 100%
-     );
+     );*/
     background-position: 0 100%;
     background-repeat: repeat-x;
     background-size: 4px 2px;
