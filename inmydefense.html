@@ -19,6 +19,12 @@
           background-color: #595959;
           color: #fff;
         }
+        a {
+          text-decoration: none;
+        }
+        a:visited {
+          color: #000;
+        }
         #container{
           position:absolute;
           text-align:center;
@@ -66,7 +72,7 @@
           document.getElementById("number").innerHTML += currentblock;
         }
         else {
-          document.getElementById("text").innerHTML = "<span><a href='https://www.rencewang.com' target='_blank'>back</a></span>";
+          document.getElementById("text").innerHTML = "<span><a href='https://www.rencewang.com' target='_blank'>HOME</a></span>";
           document.getElementById("number").innerHTML = "";
           //display an image
         }
