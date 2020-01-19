@@ -1,7 +1,7 @@
 @import url("https://use.typekit.net/xbv3jvp.css");
 
 body {
-	font-family: "neue-haas-unica", san-serif;
+	font-family: "neue-haas-unica", sans-serif;
 		font-weight: 600;
 		font-size: 14px;
   	line-height: 20px;
@@ -56,7 +56,7 @@ body {
 
 .containerabout {
 	/*font-family: "jaf-lapture", serif;*/
-	font-family: "Helvetica Neue";
+	font-family: "Helvetica Neue", "Helvetica", "Franklin Gothic", "Arial", sans-serif;
 	font-weight: 500;
 	font-style: normal;
 	width: 50%;
@@ -220,7 +220,7 @@ a {
   transition: background-size .5s;
 }
 .text_column_top a{
-	font-family: "Acumin-Pro";
+	font-family: "Acumin-Pro", sans-serif;
 	font-weight: 700;
 	font-style: italic;
 	text-decoration: none;
@@ -256,7 +256,7 @@ a.glowlink {
     text-decoration: none;
     color: #595959;
 		/*font-family: franklin-gothic-urw, sans-serif;*/
-		font-family: "Helvetica Neue", sans-serif;
+		font-family:  "Helvetica Neue", "Helvetica", "Franklin Gothic", "Arial", sans-serif; 
 			font-weight: 500;
 			font-style: normal;
 		text-transform: uppercase;
