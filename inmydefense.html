@@ -6,52 +6,7 @@
     <title>inmydefense</title>
     <meta name="author" content="Rence Wang">
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon-1.png"/>
-    <script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
     <style type="text/css">
-        html, body, div, span, applet, object, iframe,
-        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-        a, abbr, acronym, address, big, cite, code,
-        del, dfn, em, img, ins, kbd, q, s, samp,
-        small, strike, strong, sub, sup, tt, var,
-        b, u, i, center,
-        dl, dt, dd, ol, ul, li,
-        fieldset, form, label, legend,
-        table, caption, tbody, tfoot, thead, tr, th, td,
-        article, aside, canvas, details, embed,
-        figure, figcaption, footer, header, hgroup,
-        menu, nav, output, ruby, section, summary,
-        time, mark, audio, video {
-            margin: 0;
-            padding: 0;
-            border: 0;
-            font-size: 100%;
-            font: inherit;
-            vertical-align: baseline;
-        }
-        /* HTML5 display-role reset for older browsers */
-        article, aside, details, figcaption, figure,
-        footer, header, hgroup, menu, nav, section {
-            display: block;
-        }
-        body {
-            line-height: 1;
-            background-color: #f8f8f8;
-        }
-        ol, ul {
-            list-style: none;
-        }
-        blockquote, q {
-            quotes: none;
-        }
-        blockquote:before, blockquote:after,
-        q:before, q:after {
-            content: '';
-            content: none;
-        }
-        table {
-            border-collapse: collapse;
-            border-spacing: 0;
-        }
         #container{
           position:absolute;
           width:100%;
@@ -60,28 +15,17 @@
           top:0px;
           text-align:center;
           padding-top:3em;
+          padding:2em;
           top: 50%;
           transform: translateY(-50%);
         }
-        .maintext{
-          padding:2em;
-        }
-        .sea{padding:2em;}
     </style>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js" type="text/javascript"></script>
   </head>
 
   <body>
-    <div id="container">
-      <div class="maintext">
-        <p>Can you go where I go? <br>Can we always be this close?</p>
-      </div>
-    </div>
-    <script>
-      window.onclick = switcher;
-      function switcher() {
-        document.getElementByTagId("demo").innerHTML=Date();
+      <script>
         /*if (counter === 0) {
           $('.maintext').text("So help me god.")
         }
@@ -89,15 +33,79 @@
           counter = counter+1;
           $('.maintext').hide();
           $('.maintext').text(lines[counter]);
-        }*/
-        //document.getElementsByTagName("BODY")[0].style.backgroundColor="yellow";
+          <button id="next" type="button" onclick=""></button>
+
+        }
+      </script>
+    <div id="container">
+        <p id="text"></p>
+    </div>
+    <script>
+      window.onclick = revealer;
+      function revealer() {
+        if (counter < len-1) {
+          counter += 1;
+          document.getElementById("text").innerHTML += "<br>"+block[counter];
+        }
+        else {
+          document.getElementById("text").innerHTML = "";
+        }
       }
-      var lines = [
-        "To Ask Why We Fight?"
-        "If it's the best,"
+      var block = [
+        "To Ask Why We Fight?",
+        "If it's the best",
+        "pass the test,",
+        "then yes.",
+
+        "Last couple of years have been a mad trip.",
+        "I've been a Ferrari.",
+        "Going too fast to see",
+        "all the good things in front of me.",
+        "And the wicked cadavers,",
+        "the portraits in the attic,",
+        "not ready to be found.",
+
+        "Because terrors don't prey on innocent victims.",
+        "But who will save my young blood?",
+        "Swallowing nostalgia.",
+        "Chasing it with lime.",
+        "Don't help me forget",
+        "The ordinary things I'd been.",
+        "The ordinary tears I'd spent.",
+        "Are we ever ready to see ourselves for who we are?",
+        "True bliss is not knowing who we are.",
+        "Is it safe? Is it safe to be who we are?",
+        "But we're not what we thought we are.",
+        "We don't know who we thought we are.",
+        "So go get running, go get hurry.",
+        "While it's light out, while it's early.",
+        "Before I start to miss,",
+        "Any part of this,",
+        "And change my mind forever.",
+        "So I'll pick the truth I believe in",
+        "Like a bad religion.",
+        "Then I took away the matches",
+        "Before fire could catch me.",
+        "So don't look now.",
+        "那条没完没了的路<br>An endless road",
+        "一切怀有梦想的人<br>A dreaming people"
       ];
+      var begin = []
       var counter = -1;
+      var currentblock = 0;
+      var len = block.length;
+      var btn = document.createElement("BUTTON");
+      btn.innerHTML = "NEXT";
+      btn.setAttribute("id", "next");
+      btn.onclick = renew;
+      function renew() {
+        document.getElementById("container").appendChild(btn);
+        var div = document.getElementById('container');
+        while(div.firstChild){
+          div.removeChild(div.firstChild);
+        }
+      }
+
     </script>
-    <p id="demo"></p>
   </body>
-</html>/
+</html>
