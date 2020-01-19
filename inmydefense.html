@@ -19,38 +19,43 @@
           top: 50%;
           transform: translateY(-50%);
         }
+        body {
+          background-color: #f8f8f8;
+        }
     </style>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js" type="text/javascript"></script>
   </head>
 
   <body>
-      <script>
-        /*if (counter === 0) {
-          $('.maintext').text("So help me god.")
-        }
-        else {
-          counter = counter+1;
-          $('.maintext').hide();
-          $('.maintext').text(lines[counter]);
-          <button id="next" type="button" onclick=""></button>
-
-        }
-      </script>
     <div id="container">
         <p id="text"></p>
     </div>
+
     <script>
       window.onclick = revealer;
       function revealer() {
-        if (counter < len-1) {
+        if (counter < currentlen-1) {
           counter += 1;
           document.getElementById("text").innerHTML += "<br>"+block[counter];
         }
+        else if (currentblock < totalstanza) {
+          document.getElementById("text").innerHTML = "";
+          currentblock += 1;
+          currentlen += stanza[currentblock];
+        }
         else {
           document.getElementById("text").innerHTML = "";
+          //display an image
         }
       }
+
+      var stanza = [4, 7, 1, 6, 5, 5, 5, 2, 3];
+      var counter = -1;
+      var currentblock = 0;
+      var currentlen = 4;
+      var totalstanza = stanza.length;
+
       var block = [
         "To Ask Why We Fight?",
         "If it's the best",
@@ -66,46 +71,39 @@
         "not ready to be found.",
 
         "Because terrors don't prey on innocent victims.",
+
         "But who will save my young blood?",
         "Swallowing nostalgia.",
-        "Chasing it with lime.",
+        "chasing it with lime.",
         "Don't help me forget",
-        "The ordinary things I'd been.",
-        "The ordinary tears I'd spent.",
+        "the ordinary things I'd been.",
+        "the ordinary tears I'd spent.",
+
         "Are we ever ready to see ourselves for who we are?",
         "True bliss is not knowing who we are.",
         "Is it safe? Is it safe to be who we are?",
         "But we're not what we thought we are.",
         "We don't know who we thought we are.",
-        "So go get running, go get hurry.",
+
+        "Then go get running, go get hurry.",
         "While it's light out, while it's early.",
         "Before I start to miss,",
-        "Any part of this,",
-        "And change my mind forever.",
-        "So I'll pick the truth I believe in",
-        "Like a bad religion.",
-        "Then I took away the matches",
-        "Before fire could catch me.",
-        "So don't look now.",
-        "那条没完没了的路<br>An endless road",
-        "一切怀有梦想的人<br>A dreaming people"
-      ];
-      var begin = []
-      var counter = -1;
-      var currentblock = 0;
-      var len = block.length;
-      var btn = document.createElement("BUTTON");
-      btn.innerHTML = "NEXT";
-      btn.setAttribute("id", "next");
-      btn.onclick = renew;
-      function renew() {
-        document.getElementById("container").appendChild(btn);
-        var div = document.getElementById('container');
-        while(div.firstChild){
-          div.removeChild(div.firstChild);
-        }
-      }
+        "any part of this,",
+        "and change my mind forever.",
 
+        "So I'll pick the truth I believe in",
+        "like a bad religion.",
+        "And I'll take away the matches",
+        "before fire could catch me.",
+        "So don't look now.",
+
+        "那条没完没了的路<br>An endless road",
+        "一切怀有梦想的人<br>A dreaming people",
+
+        "May the world continue to be lovely.",
+        "May I always be mine.",
+        "So help me god."
+      ];
     </script>
   </body>
 </html>
