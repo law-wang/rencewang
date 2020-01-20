@@ -12,63 +12,68 @@ body {
 	font-style: normal;
   color: #000;
 }
-
-.landing {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	vertical-align: center;
-	align-items: center;
-	box-sizing: border-box !important;
+.center {
+	margin: 10% 0 10% 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
+.project {
+	text-align: center;
+	text-transform: uppercase;
+}
+.title {
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 10px;
+}
+.description {
+	margin: 10px auto 15px auto;
+	font-family: orpheuspro, serif;
+	font-weight: 300;
+	font-style: italic;
+	text-align: justify;
+	width: 50%;
+}
+
+/* Text */
 h1 {
 	font-family: neue-haas-grotesk-display, "Helvetica-Neue", sans-serif;
-	font-weight: 200;
+	font-weight: 400;
 	font-style: normal;
-	font-weight: 200;
-	font-size: 4em;
-	letter-spacing: 6px;
-}
-h2 {
-	font-family: neue-haas-grotesk-display, " Helvetica-Neue", sans-serif;
-	font-weight: 600;
-	font-style: normal;
-	font-weight: 700;
-	font-size: 4em;
-	letter-spacing: 3px;
+	font-size: 50px;
+	letter-spacing: 5px;
 }
 h4 {
-	font-weight: 300;
-	font-size: 14px;
+	font-size: 25px;
+	padding: 10px 0 5px 0;
+	margin: 0;
+}
+h6 {
+	font-size: 18px;
+	font-style: italic;
+	text-transform: lowercase;
+	padding: 5px 0 5px 0;
+	margin: 0;
 }
 
-/* Float Boxes */
-#title {
-	top: 50%;
-	text-align: center;
-	margin-right: auto;
+/* Header */
+#header {
 	margin-left: auto;
-	width: 100%;
+	margin-right: auto;
+	margin-bottom: 20px;
+	width: 55%;
 }
-#nav {
-	float: left;
-	width: 33%;
-	text-align: center;
+#header img{
+   text-decoration: none !important;
+	 max-width: 100%;
 }
-@media only screen and (max-width: 700px) {
-	#nav {
-		text-align: center;
-		width: 100%;
-	}
-	.landing {
-		margin-top: 7%;
-		margin-bottom: 7%;
-	}
-}
-#nav a {
-	color: #000;
+
+/* Links */
+.project a {
+	color: #595959;
 	text-decoration: none;
 	-webkit-transition: all .3s linear;
 	-moz-transition: all .3s linear;
@@ -76,7 +81,27 @@ h4 {
 	-o-transition: all .3s linear;
 	transition: all .3s linear;
 }
-#nav a:hover {
+.project a:hover {
 	color: #fff;
-	text-shadow: 0 0 15px #000;}
+	text-shadow: 0 0 15px #000;
+}
+
+/* Mobile Adaptive */
+@media only screen and (max-width: 700px) {
+	#header {
+		width: 100%;
+	}
+	.center {
+		margin: 30% 0 50px 0;
+	}
+}
+@media only screen and (max-width: 330px) {
+	.center {
+		margin-top: 50%;
+	}
+}
+@media only screen and (max-width: 1000px) {
+	.description {
+		width: 100%;
+	}
 }
