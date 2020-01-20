@@ -32,7 +32,7 @@ body {
 	margin-right: auto;
 	text-align: center;
 	margin-bottom: 10px;
-	width: 100%;}
+	width: 55%;}
 #header a {
 	text-decoration: none !important;
 	box-shadow: none;
@@ -59,10 +59,10 @@ body {
 	font-family: "Helvetica Neue", "Helvetica", "Franklin Gothic", "Arial", sans-serif;
 	font-weight: 500;
 	font-style: normal;
-	width: 50%;
+	width: 40%;
 	margin-left: auto;
-	margin-right: 5%;
-	margin-top: 0;
+	margin-right: auto;
+	text-align: center;
 	height: auto;
 	letter-spacing: 1px;
 	line-height: 22px;
@@ -232,7 +232,7 @@ a {
 	-ms-transition: all .3s linear;
 	-o-transition: all .3s linear;
 	transition: all .3s linear;
-	color: #a6a6a6;
+	color: #666;
 }
 .text_column_top a:hover {
 	color: #fff;
