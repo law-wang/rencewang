@@ -140,6 +140,7 @@ a {
   color: #a6a6a6;
   text-decoration: none;
   transition: background-size .5s;
+	cursor: help;
 }
 .text_column_top a{
 	font-family: "Acumin-Pro", sans-serif;
