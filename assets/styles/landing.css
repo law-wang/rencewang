@@ -144,6 +144,7 @@ mark {
 }
 #contact {
 	text-align: right;
+	font-size: 22px;
 }
 #about a {
 	font-family: "Acumin-Pro", sans-serif;
@@ -166,6 +167,10 @@ mark {
 }
 #about button:hover {
 	color: #fff;
+}
+#contact a {
+	font-style: normal;
+	color: #000;
 }
 
 /* Center Blocks ONLY */
