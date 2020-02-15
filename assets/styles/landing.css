@@ -24,6 +24,28 @@ body {
 	align-items: center;
 	box-sizing: border-box !important;
 }
+button {
+	font-family: aktiv-grotesk, "Helvetica Neue", "Open Sans Bold", "Franklin Gothic", "Arial", sans-serif;
+		font-weight: 500;
+		font-size: 17px;
+  	line-height: 20px;
+	background-color: #f8f8f8; /* Green */
+	border: none;
+	outline: none;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	-ms-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	transition: all .4s linear;
+}
+button:hover {
+	color: #fff;
+	text-shadow: 0 0 15px #000;
+	cursor: help;
+}
+button:active {
+	outline: none;
+}
 h1 {
 	font-family: neue-haas-grotesk-display, "Helvetica-Neue", sans-serif;
 	font-weight: 200;
@@ -46,11 +68,12 @@ h4 {
 }
 
 /* Float Boxes */
-.center {
+.center, .sides {
 	float: left;
 	width: 33%;
 	top: 50%;
 	text-align: center;
+	height: 50%;
 }
 #ct {
 	font-family: neue-haas-grotesk-display, " Helvetica-Neue", sans-serif;
@@ -74,8 +97,12 @@ h4 {
 		margin-top: 7%;
 		margin-bottom: 50px;
 	}
+	.center, .sides {
+		width: 100%;
+		height: auto;
+	}
 }
-.nav a {
+a {
 	color: #000;
 	text-decoration: none;
 	-webkit-transition: all .3s linear;
@@ -84,8 +111,45 @@ h4 {
 	-o-transition: all .3s linear;
 	transition: all .3s linear;
 }
-.nav a:hover {
+a:hover {
 	color: #fff;
 	text-shadow: 0 0 15px #000;
 	cursor: help;
+}
+
+/* About Block ONLY */
+#about {
+	/*font-family: "jaf-lapture", serif;*/
+	font-family: aktiv-grotesk, "Helvetica Neue", "Helvetica", "Franklin Gothic", "Arial", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: justify;
+	height: auto;
+	letter-spacing: 1px;
+	line-height: 22px;
+	background-color: rgba(0,0,0,0.0);
+	max-width: 700px;
+}
+mark {
+	background-color: #595959;
+	color: #fff;
+	padding-left: 2px;
+	padding-right: 1px;
+}
+:root {
+  --mainColor: #595959;
+}
+#about a{
+	font-family: "Acumin-Pro", sans-serif;
+	font-weight: 700;
+	font-style: italic;
+	text-decoration: none;
+	background: none;
+	color: #a6a6a6;
+}
+#about a:hover{
+	color: #fff;
 }
