@@ -82,6 +82,11 @@ h4 {
 	font-weight: 700;
 	font-size: 4em;
 	letter-spacing: 3px;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 .nav {
 	float: left;
@@ -142,7 +147,7 @@ mark {
 :root {
   --mainColor: #595959;
 }
-#about a{
+#about a {
 	font-family: "Acumin-Pro", sans-serif;
 	font-weight: 700;
 	font-style: italic;
@@ -150,6 +155,17 @@ mark {
 	background: none;
 	color: #a6a6a6;
 }
-#about a:hover{
+#about a:hover {
+	color: #fff;
+}
+#about button {
+	font-family: "Acumin-Pro", sans-serif;
+	font-weight: 700;
+	font-style: italic;
+	text-decoration: none;
+	background: none;
+	color: #a6a6a6;
+}
+#about button:hover {
 	color: #fff;
 }
