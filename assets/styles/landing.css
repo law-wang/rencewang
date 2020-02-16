@@ -28,7 +28,6 @@ button {
 	font-family: aktiv-grotesk, "Helvetica Neue", "Open Sans Bold", "Franklin Gothic", "Arial", sans-serif;
 		font-weight: 500;
 		font-size: 40px;
-  	line-height: 20px;
 	background-color: #f8f8f8; /* Green */
 	border: none;
 	outline: none;
@@ -212,20 +211,29 @@ mark {
 		padding: 0;
 	}
 	#ct {
-		width: 100%;
+		width: 90%;
 		position: static;
 		padding: 0;
 		margin-left: auto;
 		margin-right: auto;
 		text-align: center;
 		transform: none;
-		font-size: 4.5em;
+		font-size: 4em;
 		letter-spacing: normal;
 	}
 	#about {
 		width: 90%;
 		margin-left: auto;
 		text-align: justify;
+	}
+	#note {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#note h4 {
+		font-weight: 300;
+		font-size: 15px;
 	}
 }
 @media screen and (max-width: 531px) {
