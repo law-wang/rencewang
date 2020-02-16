@@ -11,8 +11,9 @@ body {
 	/*margin-left: 100px;*/
 	font-style: normal;
   color: #000;
-	cursor: help;
-	height: auto;
+	/*cursor: url("../images/cc.png"), auto;*/
+	cursor: none;
+	height: 10vh;
 }
 .landing {
 	position: absolute;
@@ -23,47 +24,6 @@ body {
 	vertical-align: center;
 	align-items: center;
 	box-sizing: border-box !important;
-}
-button {
-	font-family: aktiv-grotesk, "Helvetica Neue", "Open Sans Bold", "Franklin Gothic", "Arial", sans-serif;
-		font-weight: 500;
-		font-size: 40px;
-	background-color: #f8f8f8; /* Green */
-	border: none;
-	outline: none;
-	-webkit-transition: all .3s linear;
-	-moz-transition: all .3s linear;
-	-ms-transition: all .3s linear;
-	-o-transition: all .3s linear;
-	transition: all .4s linear;
-}
-button:hover {
-	color: #fff;
-	text-shadow: 0 0 15px #000;
-	cursor: help;
-}
-button:active {
-	outline: none;
-}
-h1 {
-	font-family: neue-haas-grotesk-display, "Helvetica-Neue", sans-serif;
-	font-weight: 200;
-	font-style: normal;
-	font-weight: 200;
-	font-size: 50px;
-	letter-spacing: 6px;
-}
-h2 {
-	font-family: neue-haas-grotesk-display, " Helvetica-Neue", sans-serif;
-	font-weight: 600;
-	font-style: normal;
-	font-weight: 700;
-	font-size: 50px;
-	letter-spacing: 3px;
-}
-h4 {
-	font-weight: 600;
-	font-size: 20px;
 }
 
 /* Float Boxes */
@@ -104,6 +64,8 @@ h4 {
 	font-size: 40px;
 	line-height: normal;
 }
+
+/* Links and Texts */
 a {
 	color: #000;
 	text-decoration: none;
@@ -117,6 +79,56 @@ a:hover {
 	color: #fff;
 	text-shadow: 0 0 15px #000;
 	cursor: help;
+}
+button {
+	font-family: aktiv-grotesk, "Helvetica Neue", "Open Sans Bold", "Franklin Gothic", "Arial", sans-serif;
+		font-weight: 500;
+		font-size: 40px;
+	background-color: rgba(248,248,248,0.0);
+	border: none;
+	outline: none;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	-ms-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	transition: all .4s linear;
+}
+button:hover {
+	color: #fff;
+	text-shadow: 0 0 15px #000;
+	cursor: help;
+}
+button:active {
+	outline: none;
+}
+h1 {
+	font-family: neue-haas-grotesk-display, "Helvetica-Neue", sans-serif;
+	font-weight: 200;
+	font-style: normal;
+	font-weight: 200;
+	font-size: 50px;
+	letter-spacing: 6px;
+}
+h2 {
+	font-family: neue-haas-grotesk-display, " Helvetica-Neue", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 50px;
+	letter-spacing: 3px;
+}
+h4 {
+	font-weight: 600;
+	font-size: 20px;
+}
+.cursor {
+	width: 30px;
+	height: 30px;
+	background-color: #fff;
+	box-shadow: 0 0 20px #000;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 0;
 }
 
 /* About Block ONLY */
