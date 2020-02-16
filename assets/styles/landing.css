@@ -198,14 +198,13 @@ mark {
 		margin-bottom: 40px;
 	}
 	.nav {
-		text-align: center;
-		width: 100%;
+		font-size: 20px;
 	}
 	.landing {
 		margin-top: 7%;
 		margin-bottom: 50px;
 	}
-	.center, .sides {
+	.center, .sides, #aboutbutton, #projectbutton {
 		width: 100%;
 		height: auto;
 		padding: 0;
@@ -243,17 +242,25 @@ mark {
 	}
 }
 @media screen and (max-width: 531px) {
-    .nav, .sides, .center {
+    .sides, .center {
 			display: flex;
 			flex-flow: column;
 		}
-		#clock { order: 1; }
-    #note { order: 2; }
-    #portfolio { order: 3; }
-    #projectbutton { order: 4; }
-    #blog { order: 5; }
-    #thoughts { order: 6; }
-		#aboutbutton { order: 7; }
+		#projectbutton, #aboutbutton {
+			width: 50%;
+			float: left;
+			font-size: 20px;
+		}
+		#aboutbutton button {
+			font-size: 20px;
+		}
+		#thoughts { order: 1; }
+		#portfolio { order: 2; }
+		#blog { order: 3; }
+		#clock { order: 4; }
+    #note { order: 5; }
+		#aboutbutton { order: 6; }
+    #projectbutton { order: 7; }
 		#left { order: 8; }
 		#right { order: 9; }
 }
