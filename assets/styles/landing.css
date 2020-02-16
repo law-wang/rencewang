@@ -12,6 +12,7 @@ body {
 	font-style: normal;
   color: #000;
 	cursor: help;
+	height: auto;
 }
 .landing {
 	position: absolute;
@@ -78,13 +79,15 @@ h4 {
 	width: 45%;
 }
 #ct {
-	font-family: orpheuspro, whitman-display, serif;
-	/*font-family: neue-haas-grotesk-display, " Helvetica-Neue", sans-serif;*/
+	font-family: odisseia, sans-serif;
+	font-weight: 900;
+	font-style: normal;
+	/*font-family: neue-haas-grotesk-display, " Helvetica-Neue", sans-serif;
 	font-weight: 600;
 	font-style: normal;
-	font-weight: 700;
+	font-weight: 700;*/
 	font-size: 10em;
-	letter-spacing: 3px;
+	letter-spacing: -10px;
 	margin: 0;
 	position: absolute;
 	top: 50%;
@@ -131,7 +134,7 @@ a:hover {
 	text-align: right;
 	height: auto;
 	letter-spacing: 1px;
-	line-height: 22px;
+	line-height: 20px;
 	background-color: rgba(248,248,248,0.7);
 	box-shadow: 0 0 10px 10px rgba(248,248,248,0.7);
 	padding: 5px;
@@ -190,7 +193,11 @@ mark {
 	line-height: normal;
 }
 
+/* Responsive */
 @media only screen and (max-width: 700px) {
+	body {
+		margin-bottom: 40px;
+	}
 	.nav {
 		text-align: center;
 		width: 100%;
@@ -202,18 +209,37 @@ mark {
 	.center, .sides {
 		width: 100%;
 		height: auto;
-		padding: 2%;
+		padding: 0;
 	}
 	#ct {
-		position: inherit;
+		width: 100%;
+		position: static;
+		padding: 0;
 		margin-left: auto;
 		margin-right: auto;
+		text-align: center;
 		transform: none;
 		font-size: 4.5em;
+		letter-spacing: normal;
 	}
 	#about {
 		width: 90%;
 		margin-left: auto;
 		text-align: justify;
 	}
+}
+@media screen and (max-width: 531px) {
+    .nav, .sides, .center {
+			display: flex;
+			flex-flow: column;
+		}
+		#clock { order: 1; }
+    #note { order: 2; }
+    #portfolio { order: 3; }
+    #projectbutton { order: 4; }
+    #blog { order: 5; }
+    #thoughts { order: 6; }
+		#aboutbutton { order: 7; }
+		#left { order: 8; }
+		#right { order: 9; }
 }
