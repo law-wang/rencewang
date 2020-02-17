@@ -214,7 +214,10 @@ mark {
 		margin-top: 7%;
 		margin-bottom: 50px;
 	}
-	.center, .sides, #aboutbutton, #projectbutton {
+	.center,
+	.sides,
+	#aboutbutton,
+	#projectbutton {
 		width: 100%;
 		height: auto;
 		padding: 0;
@@ -252,11 +255,13 @@ mark {
 	}
 }
 @media screen and (max-width: 531px) {
-    .sides, .center {
+    .sides,
+		.center {
 			display: flex;
 			flex-flow: column;
 		}
-		#projectbutton, #aboutbutton {
+		#projectbutton,
+		#aboutbutton {
 			width: 50%;
 			float: left;
 			font-size: 20px;
