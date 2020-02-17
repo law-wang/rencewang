@@ -57,7 +57,7 @@ body {
 	transform: translate(-50%, -50%);
 	z-index: 1;
 	padding: 20px;
-	color: #fff;
+	color: #f8f8f8;
 	text-shadow: 0 0 150px #000;
 }
 #left {
