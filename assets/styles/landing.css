@@ -203,7 +203,7 @@ mark {
 	color: #000;
 }
 
-/* Center Blocks ONLY */
+/* Center Block ONLY */
 #title {
 	font-family: neue-haas-grotesk-display, "Helvetica-Neue", sans-serif;
 	font-weight: 200;
@@ -212,6 +212,11 @@ mark {
 	font-size: 50px;
 	letter-spacing: 20px;
 	line-height: normal;
+}
+
+/* Project Block ONLY */
+#right {
+	text-align: left;
 }
 
 /* Responsive */
