@@ -222,8 +222,7 @@ mark {
 	z-index: 2;
 }
 #project {
-	height: 50%;
-	max-height: 700px;
+	height: 100%;
 	width: 80%;
 	overflow: scroll;
 	background-color: rgba(248,248,248,0.7);
