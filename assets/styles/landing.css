@@ -146,6 +146,7 @@ h4 {
 	overflow: scroll;
 	margin-left: 20%;
 	margin-right: auto;
+	margin-top: 10px;
 	padding: 5px;
 	background-color: rgba(248,248,248,0.7);
 	box-shadow: 0 0 10px 10px rgba(248,248,248,0.7);
@@ -283,7 +284,8 @@ mark {
 		text-align: justify;
 		line-height: 30px;
 		height: auto;
-		overflow: visible;
+		overflow-y: visible;
+		overflow-x: hidden;
 	}
 	#note {
 		width: 90%;
