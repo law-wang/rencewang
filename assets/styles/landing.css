@@ -56,7 +56,7 @@ body {
 }
 
 /* Links and Texts */
-a {
+.nav a {
 	color: #000;
 	text-decoration: none;
 	-webkit-transition: all .3s linear;
@@ -65,9 +65,11 @@ a {
 	-o-transition: all .3s linear;
 	transition: all .3s linear;
 }
-a:hover {
+.nav a:hover {
 	color: #fff;
 	text-shadow: 0 0 15px #000;
+}
+a:hover {
 	cursor: help;
 }
 button {
@@ -217,7 +219,7 @@ mark {
 /* Project Block ONLY */
 #right {
 	text-align: left;
-	z-index: 3;
+	z-index: 2;
 }
 #project {
 	height: 50%;
