@@ -56,7 +56,7 @@ body {
 }
 
 /* Links and Texts */
-.nav a {
+.nav a, #contact a {
 	color: #000;
 	text-decoration: none;
 	-webkit-transition: all .3s linear;
@@ -65,7 +65,7 @@ body {
 	-o-transition: all .3s linear;
 	transition: all .3s linear;
 }
-.nav a:hover {
+.nav a:hover, #contact a:hover {
 	color: #fff;
 	text-shadow: 0 0 15px #000;
 }
@@ -138,7 +138,8 @@ h4 {
 		line-height: 20px;
 	width: 80%;
 		max-width: 700px;
-	height: auto;
+	height: 100%;
+	overflow: scroll;
 	margin-left: 20%;
 	margin-right: auto;
 	padding: 5px;
@@ -276,6 +277,8 @@ mark {
 		width: 90%;
 		text-align: justify;
 		line-height: 30px;
+		height: auto;
+		overflow: visible;
 	}
 	#note {
 		width: 90%;
