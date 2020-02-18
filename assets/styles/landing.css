@@ -218,6 +218,14 @@ mark {
 #right {
 	text-align: left;
 }
+#project {
+	height: auto;
+	width: 80%;
+	background-color: rgba(248,248,248,0.7);
+	box-shadow: 0 0 10px 10px rgba(248,248,248,0.7);
+	padding: 5px;
+	max-width: 700px;
+}
 
 /* Responsive */
 @media only screen and (max-width: 1000px) {
