@@ -1,7 +1,8 @@
 @import url("https://use.typekit.net/xbv3jvp.css");
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
-html, body {
+html,
+body {
 	overflow-x: hidden;
 }
 body {
@@ -35,7 +36,8 @@ body {
 }
 
 /* Float Boxes */
-.center, .sides {
+.center,
+.sides {
 	float: left;
 	top: 50%;
 	text-align: center;
@@ -56,7 +58,8 @@ body {
 }
 
 /* Links and Texts */
-.nav a, #contact a {
+.nav a,
+#contact a {
 	color: #000;
 	text-decoration: none;
 	-webkit-transition: all .3s linear;
@@ -65,7 +68,8 @@ body {
 	-o-transition: all .3s linear;
 	transition: all .3s linear;
 }
-.nav a:hover, #contact a:hover {
+.nav a:hover,
+#contact a:hover {
 	color: #fff;
 	text-shadow: 0 0 15px #000;
 }
@@ -266,7 +270,8 @@ mark {
 		font-size: 4em;
 		letter-spacing: normal;
 	}
-	#about, #project {
+	#about,
+	#project {
 		position: absolute;
 		left:0;
   	right:0;
@@ -305,6 +310,7 @@ mark {
 			float: left;
 			font-size: 20px;
 		}
+		#projectbutton button,
 		#aboutbutton button {
 			font-size: 20px;
 		}
