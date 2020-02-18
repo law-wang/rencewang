@@ -244,6 +244,7 @@ mark {
 	body {
 		margin-bottom: 40px;
 		cursor: auto;
+		overflow-x: hidden;
 	}
 	.nav {
 		font-size: 20px;
