@@ -1,17 +1,14 @@
 @import url("https://use.typekit.net/xbv3jvp.css");
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
+html, body {
+	overflow-x: hidden;
+}
 body {
 	text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-	font-family: aktiv-grotesk, "Helvetica Neue", "Open Sans Bold", "Franklin Gothic", "Arial", sans-serif;
-		font-weight: 500;
-		font-size: 17px;
-  	line-height: 20px;
 	background-color: #f8f8f8;
-	font-style: normal;
-  color: #000;
 	/*cursor: url("../images/cc.png"), auto;*/
 	cursor: cell;
 	width: 100vw;
@@ -29,6 +26,12 @@ body {
   justify-content: center;
 	vertical-align: center;
 	align-items: center;
+	font-family: aktiv-grotesk, "Helvetica Neue", "Open Sans Bold", "Franklin Gothic", "Arial", sans-serif;
+		font-weight: 500;
+		font-size: 17px;
+  	line-height: 20px;
+		font-style: normal;
+	  color: #000;
 }
 
 /* Float Boxes */
