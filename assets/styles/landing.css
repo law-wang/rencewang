@@ -166,8 +166,10 @@ mark {
   --mainColor: #595959;
 }
 #contact {
+	margin-top: 20px;
 	text-align: right;
 	font-size: 22px;
+	line-height: 25px;
 }
 #about a {
 	font-family: "Acumin-Pro", sans-serif;
@@ -253,6 +255,7 @@ mark {
 		display: inline;
 		width: 90%;
 		text-align: justify;
+		line-height: 30px;
 	}
 	#note {
 		width: 90%;
