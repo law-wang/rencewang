@@ -42,10 +42,10 @@ body {
 	height: 50%;
 }
 .center {
-	width: 10%;
+	width: 2%;
 }
 .sides {
-	width: 45%;
+	width: 49%;
 }
 .nav {
 	float: left;
@@ -131,19 +131,19 @@ h4 {
 #about {
 	/*font-family: "jaf-lapture", serif;*/
 	font-family: aktiv-grotesk, "Helvetica Neue", "Helvetica", "Franklin Gothic", "Arial", sans-serif;
-	font-weight: 500;
-	font-style: normal;
+		font-weight: 500;
+		font-style: normal;
+		text-align: right;
+		letter-spacing: 1px;
+		line-height: 20px;
 	width: 80%;
+		max-width: 700px;
+	height: auto;
 	margin-left: 20%;
 	margin-right: auto;
-	text-align: right;
-	height: auto;
-	letter-spacing: 1px;
-	line-height: 20px;
+	padding: 5px;
 	background-color: rgba(248,248,248,0.7);
 	box-shadow: 0 0 10px 10px rgba(248,248,248,0.7);
-	padding: 5px;
-	max-width: 700px;
 }
 mark {
 	background-color: #595959;
@@ -266,7 +266,7 @@ mark {
 		font-size: 4em;
 		letter-spacing: normal;
 	}
-	#about {
+	#about, #project {
 		position: absolute;
 		left:0;
   	right:0;
