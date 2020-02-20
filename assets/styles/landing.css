@@ -59,7 +59,8 @@ body {
 
 /* Links and Texts */
 .nav a,
-#contact a {
+#contact a,
+#about a {
 	color: #000;
 	text-decoration: none;
 	-webkit-transition: all .3s linear;
@@ -69,7 +70,8 @@ body {
 	transition: all .3s linear;
 }
 .nav a:hover,
-#contact a:hover {
+#contact a:hover,
+#about a:hover {
 	color: #fff;
 	text-shadow: 0 0 15px #000;
 }
@@ -175,9 +177,6 @@ mark {
 	background: none;
 	color: #707070;
 }
-#about a:hover {
-	color: #fff;
-}
 #about button {
 	font-family: "Acumin-Pro", sans-serif;
 	font-weight: 700;
@@ -219,7 +218,7 @@ mark {
 	z-index: 1;
 	padding: 20px;
 	color: #f8f8f8;
-	text-shadow: 0 0 200px #000;
+	text-shadow: 0 0 130px #000;
 }
 
 /* Project Block ONLY */
@@ -271,6 +270,7 @@ mark {
 		transform: none;
 		font-size: 4em;
 		letter-spacing: normal;
+		text-shadow: 0 0 100px #000;
 	}
 	#about,
 	#project {
