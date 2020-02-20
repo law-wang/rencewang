@@ -19,6 +19,13 @@ function showAbout() {
   else {
     x.style.display = "none";
   }
+  var y = document.getElementById("project");
+  if (y.style.display === "block") {
+    y.style.display = "none";
+  }
+  else {
+    y.style.display = "none";
+  }
 }
 function showContact() {
   document.getElementById("contact").innerHTML = "<a href='https://www.facebook.com/lawrencio.w'>FACEBOOK</a><br><a href='https://www.instagram.com/lawrencio.w/'>INSTAGRAM</a><br><a href='https://www.linkedin.com/in/lawrence-c-w/'>LINKEDIN</a><br><a href='https://open.spotify.com/user/2232mfikorkepi3hqhfpkgdhq?si=V1tFp8yNSGatvckEe4Ia8w'>SPOTIFY</a><br>";
@@ -31,6 +38,13 @@ function showProject() {
   }
   else {
     x.style.display = "none";
+  }
+  var y = document.getElementById("about");
+  if (y.style.display === "block") {
+    y.style.display = "none";
+  }
+  else {
+    y.style.display = "none";
   }
 }
 function greeting() {
