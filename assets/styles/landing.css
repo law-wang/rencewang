@@ -270,7 +270,7 @@ mark {
 		transform: none;
 		font-size: 4em;
 		letter-spacing: normal;
-		text-shadow: 0 0 100px #000;
+		text-shadow: 0 0 50px #000;
 	}
 	#about,
 	#project {
@@ -294,8 +294,9 @@ mark {
 		margin-right: auto;
 	}
 	#note h4 {
-		font-weight: 300;
-		font-size: 15px;
+		margin: 0;
+		font-weight: 500;
+		font-size: 18px;
 	}
 	#customcursor {
 		display: none;
@@ -304,12 +305,18 @@ mark {
 @media screen and (max-width: 531px) {
 		.landing {
 			margin-top: 5px;
-			height: 500px;
+			height: 600px;
 		}
     .sides,
 		.center {
 			display: flex;
 			flex-flow: column;
+		}
+		.sides {
+			margin-top: -20px;
+		}
+		.nav {
+			width: 50%;
 		}
 		#projectbutton,
 		#aboutbutton {
@@ -321,13 +328,13 @@ mark {
 		#aboutbutton button {
 			font-size: 20px;
 		}
-		#thoughts { order: 1; }
-		#portfolio { order: 2; }
-		#blog { order: 3; }
-		#clock { order: 4; }
-    #note { order: 5; }
-		#aboutbutton { order: 6; }
-    #projectbutton { order: 7; }
+		#note { order: 1; }
+		#clock { order: 2; }
+		#portfolio { order: 3; }
+		#thoughts { order: 4; }
+		#blog { order: 5; }
+    #projectbutton { order: 6; }
+		#aboutbutton { order: 7; }
 		#left { order: 8; }
 		#right { order: 9; }
 }
