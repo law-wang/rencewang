@@ -249,7 +249,7 @@ mark {
 		font-size: 20px;
 	}
 	.landing {
-		margin-top: 7%;
+		margin-top: 5%;
 		margin-bottom: 50px;
 	}
 	.center,
@@ -302,6 +302,10 @@ mark {
 	}
 }
 @media screen and (max-width: 531px) {
+		.landing {
+			margin-top: 5px;
+			height: 500px;
+		}
     .sides,
 		.center {
 			display: flex;
