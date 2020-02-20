@@ -193,6 +193,9 @@ mark {
 	font-style: normal;
 	color: #000;
 }
+#aboutbuttonmobile {
+	display: none;
+}
 
 /* Center Block ONLY */
 #title {
@@ -234,6 +237,9 @@ mark {
 	box-shadow: 0 0 10px 10px rgba(248,248,248,0.7);
 	padding: 5px;
 	max-width: 700px;
+}
+#projectbuttonmobile {
+	display: none;
 }
 
 /* Responsive */
@@ -283,7 +289,7 @@ mark {
 		display: inline;
 		width: 90%;
 		text-align: justify;
-		line-height: 30px;
+		line-height: 25px;
 		height: auto;
 		overflow-y: visible;
 		overflow-x: hidden;
@@ -318,14 +324,19 @@ mark {
 		.nav {
 			width: 50%;
 		}
-		#projectbutton,
-		#aboutbutton {
+		#aboutbutton,
+		#projectbutton {
+			display: none;
+		}
+		#projectbuttonmobile,
+		#aboutbuttonmobile {
 			width: 50%;
 			float: left;
 			font-size: 20px;
+			display: block;
 		}
-		#projectbutton button,
-		#aboutbutton button {
+		#projectbuttonmobile button,
+		#aboutbuttonmobile button {
 			font-size: 20px;
 		}
 		#note { order: 1; }
@@ -333,8 +344,8 @@ mark {
 		#portfolio { order: 3; }
 		#thoughts { order: 4; }
 		#blog { order: 5; }
-    #projectbutton { order: 6; }
-		#aboutbutton { order: 7; }
+    #projectbuttonmobile { order: 6; }
+		#aboutbuttonmobile { order: 7; }
 		#left { order: 8; }
 		#right { order: 9; }
 }

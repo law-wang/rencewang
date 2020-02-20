@@ -19,6 +19,15 @@ function showAbout() {
   else {
     x.style.display = "none";
   }
+}
+function showAboutMobile() {
+  var x = document.getElementById("about");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  }
+  else {
+    x.style.display = "none";
+  }
   var y = document.getElementById("project");
   if (y.style.display === "block") {
     y.style.display = "none";
@@ -32,6 +41,15 @@ function showContact() {
   //document.getElementById("ct").innerHTML = "王晨玮";
 }
 function showProject() {
+  var x = document.getElementById("project");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  }
+  else {
+    x.style.display = "none";
+  }
+}
+function showProjectMobile() {
   var x = document.getElementById("project");
   if (x.style.display === "none") {
     x.style.display = "block";
