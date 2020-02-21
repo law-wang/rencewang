@@ -324,6 +324,12 @@ mark {
 		.nav {
 			width: 50%;
 		}
+		#contact {
+			margin-bottom: 20px;
+		}
+		#project {
+			margin-top: -20px;
+		}
 		#aboutbutton,
 		#projectbutton {
 			display: none;
@@ -342,10 +348,10 @@ mark {
 		#note { order: 1; }
 		#clock { order: 2; }
 		#portfolio { order: 3; }
-		#thoughts { order: 4; }
-		#blog { order: 5; }
-    #projectbuttonmobile { order: 6; }
-		#aboutbuttonmobile { order: 7; }
-		#left { order: 8; }
-		#right { order: 9; }
+		#thoughts { display: hidden; }
+		#blog { order: 4; }
+    #projectbuttonmobile { order: 5; }
+		#aboutbuttonmobile { order: 6; }
+		#left { order: 7; }
+		#right { order: 8; }
 }
