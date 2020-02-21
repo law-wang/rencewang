@@ -170,18 +170,20 @@ mark {
 }
 #about a {
 	font-family: "Acumin-Pro", sans-serif;
-	font-weight: 700;
-	font-style: italic;
-	font-size: 20px;
+		font-weight: 700;
+		font-style: italic;
+		font-size: 20px;
+		line-height: 20px;
 	text-decoration: none;
 	background: none;
 	color: #707070;
 }
 #about button {
 	font-family: "Acumin-Pro", sans-serif;
-	font-weight: 700;
-	font-style: italic;
-	font-size: 20px;
+		font-weight: 700;
+		font-style: italic;
+		font-size: 20px;
+		line-height: 20px;
 	text-decoration: none;
 	background: none;
 	color: #707070;
@@ -243,8 +245,6 @@ mark {
 }
 
 /* Responsive */
-@media only screen and (max-width: 1000px) {
-}
 @media only screen and (max-width: 700px) {
 	body {
 		margin-bottom: 40px;
