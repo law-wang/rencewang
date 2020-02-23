@@ -314,6 +314,10 @@ mark {
 	}
 }
 @media screen and (max-width: 531px) {
+		body {
+			max-width: 100%;
+			overflow: hidden;
+		}
 		.landing {
 			margin-top: 5px;
 			height: 600px;
