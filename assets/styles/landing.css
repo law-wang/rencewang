@@ -186,6 +186,7 @@ mark {
 	text-decoration: none;
 	background: none;
 	color: #707070;
+	padding: 0;
 }
 #about button:hover {
 	color: #fff;
