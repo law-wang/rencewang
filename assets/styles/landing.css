@@ -66,6 +66,7 @@ body {
 }
 #thoughts {
 	font-weight: 300;
+	text-transform: uppercase;
 }
 
 /* Links and Texts */
@@ -237,8 +238,8 @@ mark {
 	transform: translate(-50%, -50%);
 	z-index: 1;
 	padding: 20px;
-	color: #f8f8f8;
-	text-shadow: 0 0 130px #000;
+	/* color: #f8f8f8;
+	text-shadow: 0 0 130px #000; */
 }
 
 /* Project Block ONLY */
@@ -373,10 +374,44 @@ mark {
 		#note { order: 1; }
 		#clock { order: 2; }
 		#portfolio { order: 3; }
-		#thoughts { display: hidden; }
+		#thoughts { display: none; }
 		#blog { order: 4; }
 		#aboutbuttonmobile { order: 5; }
     #projectbuttonmobile { order: 6; }
 		#left { order: 7; }
 		#right { order: 8; }
+}
+
+/* Color Changer ONLY */
+.color-changer{
+	 -webkit-animation: color-change 7s infinite;
+	 -moz-animation: color-change 7s infinite;
+	 -o-animation: color-change 7s infinite;
+	 -ms-animation: color-change 7s infinite;
+	 animation: color-change 7s infinite;
+}
+@-webkit-keyframes color-change {
+	0% { color: #f8f8f8; text-shadow: 0 0 130px #000; }
+	50% { color: #000; text-shadow: 0 0 50px #000; }
+	100% { color: #f8f8f8; text-shadow: 0 0 130px #000; }
+}
+@-moz-keyframes color-change {
+	0% { color: #f8f8f8; text-shadow: 0 0 130px #000; }
+	50% { color: #000; text-shadow: 0 0 50px #000; }
+	100% { color: #f8f8f8; text-shadow: 0 0 130px #000; }
+}
+@-ms-keyframes color-change {
+	0% { color: #f8f8f8; text-shadow: 0 0 130px #000; }
+	50% { color: #000; text-shadow: 0 0 50px #000; }
+	100% { color: #f8f8f8; text-shadow: 0 0 130px #000; }
+}
+@-o-keyframes color-change {
+	0% { color: #f8f8f8; text-shadow: 0 0 130px #000; }
+	50% { color: #000; text-shadow: 0 0 50px #000; }
+	100% { color: #f8f8f8; text-shadow: 0 0 130px #000; }
+}
+@keyframes color-change {
+	0% { color: #f8f8f8; text-shadow: 0 0 130px #000; }
+	50% { color: #000; text-shadow: 0 0 50px #000; }
+	100% { color: #f8f8f8; text-shadow: 0 0 130px #000; }
 }
