@@ -27,7 +27,7 @@ body {
   justify-content: center;
 	vertical-align: center;
 	align-items: center;
-	font-family: aktiv-grotesk-extended, "Helvetica Neue", "Open Sans Bold", "Franklin Gothic", "Arial", sans-serif;
+	font-family: aktiv-grotesk, "Helvetica Neue", "Open Sans Bold", "Franklin Gothic", "Arial", sans-serif;
 		font-weight: 500;
 		font-size: 17px;
   	line-height: 20px;
@@ -53,8 +53,14 @@ body {
 	float: left;
 	width: 33%;
 	text-align: center;
-	font-size: 40px;
-	line-height: normal;
+	font-family: aktiv-grotesk-extended, "Helvetica Neue", "Open Sans Bold", "Franklin Gothic", "Arial", sans-serif;
+		font-weight: 700;
+		font-size: 40px;
+		line-height: normal;
+}
+#note {
+	font-family: aktiv-grotesk;
+	font-weight: 300;
 }
 
 /* Links and Texts */
@@ -75,6 +81,9 @@ body {
 	color: #fff;
 	text-shadow: 0 0 15px #000;
 }
+.nav a:hover {
+	text-shadow: 0 0 30px #000;
+}
 a:hover {
 	cursor: help;
 }
@@ -93,7 +102,7 @@ button {
 }
 button:hover {
 	color: #fff;
-	text-shadow: 0 0 15px #000;
+	text-shadow: 0 0 30px #000;
 	cursor: help;
 }
 button:active {
