@@ -4,6 +4,7 @@
 html,
 body {
 	overflow-x: hidden;
+	box-sizing: border-box;
 }
 body {
 	text-rendering: optimizeLegibility;
@@ -33,6 +34,7 @@ body {
   	line-height: 20px;
 		font-style: normal;
 	  color: #000;
+	overflow-x: hidden;
 }
 
 /* Float Boxes */
@@ -67,7 +69,7 @@ body {
 .nav a,
 #contact a,
 #about a {
-	color: #000;
+	color: #333333;
 	text-decoration: none;
 	-webkit-transition: all .3s linear;
 	-moz-transition: all .3s linear;
@@ -88,6 +90,7 @@ a:hover {
 	cursor: help;
 }
 button {
+	color: #333333;
 	font-family: aktiv-grotesk-extended, "Helvetica Neue", "Open Sans Bold", "Franklin Gothic", "Arial", sans-serif;
 		font-weight: 700;
 		font-size: 40px;
@@ -369,8 +372,8 @@ mark {
 		#portfolio { order: 3; }
 		#thoughts { display: hidden; }
 		#blog { order: 4; }
-    #projectbuttonmobile { order: 5; }
-		#aboutbuttonmobile { order: 6; }
+		#aboutbuttonmobile { order: 5; }
+    #projectbuttonmobile { order: 6; }
 		#left { order: 7; }
 		#right { order: 8; }
 }
