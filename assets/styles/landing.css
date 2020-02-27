@@ -64,6 +64,9 @@ body {
 	font-family: aktiv-grotesk;
 	font-weight: 300;
 }
+#thoughts {
+	font-weight: 300;
+}
 
 /* Links and Texts */
 .nav a,
