@@ -27,7 +27,7 @@ body {
   justify-content: center;
 	vertical-align: center;
 	align-items: center;
-	font-family: aktiv-grotesk, "Helvetica Neue", "Open Sans Bold", "Franklin Gothic", "Arial", sans-serif;
+	font-family: aktiv-grotesk-extended, "Helvetica Neue", "Open Sans Bold", "Franklin Gothic", "Arial", sans-serif;
 		font-weight: 500;
 		font-size: 17px;
   	line-height: 20px;
@@ -79,8 +79,8 @@ a:hover {
 	cursor: help;
 }
 button {
-	font-family: aktiv-grotesk, "Helvetica Neue", "Open Sans Bold", "Franklin Gothic", "Arial", sans-serif;
-		font-weight: 500;
+	font-family: aktiv-grotesk-extended, "Helvetica Neue", "Open Sans Bold", "Franklin Gothic", "Arial", sans-serif;
+		font-weight: 700;
 		font-size: 40px;
 	background-color: rgba(248,248,248,0.0);
 	border: none;
