@@ -14,15 +14,19 @@ body {
 	/*cursor: url("../images/cc.png"), auto;*/
 	cursor: cell;
 	width: 100vw;
-	height: 10vh;
+	height: 10vh
 }
 .landing {
 	position: absolute;
-	width: 100%;
+	width: 90%;
 	height: 100%;
-	top: 0;
-  left: 0;
-  margin: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/* margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0; */
 	display: flex;
 	flex-wrap: wrap;
   justify-content: center;
@@ -34,7 +38,7 @@ body {
   	line-height: 20px;
 		font-style: normal;
 	  color: #000;
-	overflow-x: hidden;
+	overflow: visible;
 }
 
 /* Float Boxes */
@@ -69,6 +73,18 @@ body {
 	/* text-transform: ; */
 	font-weight: 600;
 	font-size: 20px;
+}
+@media only screen and (min-width: 700px) {
+	#aboutbuttonmobile,
+	#aboutbutton,
+	#portfolio {
+		text-align: left;
+	}
+	#projectbuttonmobile,
+	#projectbutton,
+	#blog {
+		text-align: right;
+	}
 }
 
 /* Links and Texts */
@@ -108,6 +124,8 @@ button {
 	-ms-transition: all .3s linear;
 	-o-transition: all .3s linear;
 	transition: all .4s linear;
+	padding: 0;
+	margin: 0;
 }
 button:hover {
 	color: #fff;
@@ -318,7 +336,8 @@ mark {
 		overflow-y: visible;
 		overflow-x: hidden;
 	}
-	#note {
+	#note,
+	#thoughts {
 		width: 90%;
 		margin-left: auto;
 		margin-right: auto;
@@ -375,8 +394,8 @@ mark {
 		}
 		#note { order: 1; }
 		#clock { order: 2; }
-		#portfolio { order: 3; }
-		#thoughts { display: none; }
+		#thoughts { order: 3; }
+		#portfolio { order: 4; }
 		#blog { order: 4; }
 		#aboutbuttonmobile { order: 5; }
     #projectbuttonmobile { order: 6; }
