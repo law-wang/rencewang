@@ -417,3 +417,12 @@ mark {
 	50% { color: #000; text-shadow: 0 0 50px #000; }
 	100% { color: #f8f8f8; text-shadow: 0 0 130px #000; }
 }
+::selection {
+  background: #c2c2d6; /* WebKit/Blink Browsers */
+}
+/* light purple #ccb3ff */
+/* light blue #ccf5ff */
+/* rose #cc6699 */
+::-moz-selection {
+  background: #c2c2d6; /* Gecko Browsers */
+}
