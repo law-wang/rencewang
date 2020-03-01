@@ -188,6 +188,11 @@ h4 {
 	overflow-x: hidden;
 	overflow-y: auto;
 }
+.eighty {
+	width: 80%;
+	margin-right: 15px;
+	margin-left: auto;
+}
 mark {
 	background-color: #595959;
 	color: #fff;
