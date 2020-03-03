@@ -34,20 +34,20 @@ body {
 	overflow: visible;
 }
 
-/* Float Boxes */
+/* Float Boxes & Navigation ONLY */
 .centerfloat {
 	float: left;
-	top: 40%;
+	top: 50%;
 	height: 60%;
 }
 .middle {
-	width: 20%;
+	width: 30%;
 }
 .leftside {
 	width: 30%;
 }
 .rightside {
-	width: 50%;
+	width: 40%;
 }
 .nav {
 	float: left;
@@ -68,11 +68,19 @@ body {
 	font-weight: 600;
 	font-size: 20px;
 }
-#aboutbuttonmobile {
-	display: none;
-}
+#aboutbuttonmobile,
 #projectbuttonmobile {
 	display: none;
+}
+#aboutbuttonmobile,
+#aboutbutton,
+#portfolio {
+	text-align: left;
+}
+#projectbuttonmobile,
+#projectbutton,
+#blog {
+	text-align: right;
 }
 
 /* Links and Texts */
@@ -124,7 +132,7 @@ button:active {
 	outline: none;
 }
 
-/* Side Block ONLY */
+/* Side Blocks ONLY */
 .front {
 	z-index: 2;
 }
@@ -203,86 +211,30 @@ mark {
 }
 
 /* Responsive */
-@media only screen and (min-width: 200px) {
-	#aboutbuttonmobile,
-	#aboutbutton,
-	#portfolio {
-		text-align: left;
-	}
-	#projectbuttonmobile,
-	#projectbutton,
-	#blog {
-		text-align: right;
-	}
-}
 @media only screen and (min-width: 1500px) {
 	#about {
 		line-height: 30px;
 	}
 }
-/* @media only screen and (min-width: 900px) {
-	#about {
-		opacity: 0;
-	}
-} */
+
 @media only screen and (max-width: 900px) {
 	body {
 		margin-bottom: 40px;
-		overflow-x: hidden;
-	}
-	.nav {
-		width: 50%;
-		margin-bottom: 10px;
 	}
 	.landing {
 		margin-top: 5%;
 		margin-bottom: 50px;
 	}
-	.middle {
-		display: flex;
-		flex-flow: column;
+
+	.centerfloat {
+		height: auto;
 	}
-	.sides,
-	#aboutbutton,
-	#projectbutton {
+	.middle {
+		width: 100%;
+	}
+	.nav {
 		width: 50%;
-		height: auto;
-		padding: 0;
-	}
-	.middle {
-		width: 90%;
-	}
-	#aboutbutton {
-		text-align: right;
-	}
-	#projectbutton {
-		text-align: left;
-	}
-	#ct {
-		width: 80%;
-		position: static;
-		margin-left: auto;
-		margin-right: auto;
-		transform: none;
-		font-size: 4em;
-		letter-spacing: normal;
-		text-shadow: 0 0 50px #000;
-	}
-	#about,
-	#project {
-		position: absolute;
-		left:0;
-  	right:0;
-	  margin-left: auto;
-	  margin-right: auto;
-		margin-bottom: 10%;
-		display: inline;
-		width: 90%;
-		text-align: left;
-		line-height: 25px;
-		height: auto;
-		overflow-y: visible;
-		overflow-x: hidden;
+		margin-bottom: 10px;
 	}
 	#note,
 	#thoughts {
@@ -298,60 +250,91 @@ mark {
 	#thoughts {
 		margin: 0;
 	}
+
+	.sides,
+	#aboutbutton,
+	#projectbutton {
+		width: 50%;
+		height: auto;
+		padding: 0;
+	}
+	#ct {
+		width: 100%;
+		position: static;
+		margin-left: auto;
+		margin-right: auto;
+		transform: none;
+		font-size: 4em;
+		letter-spacing: normal;
+		text-shadow: 0 0 50px #000;
+	}
+	#about,
+	#project {
+		position: absolute;
+		width: 90%;
+		height: auto;
+		left:0;
+  	right:0;
+	  margin-left: auto;
+	  margin-right: auto;
+		margin-bottom: 10%;
+		display: inline;
+			text-align: left;
+			line-height: 25px;
+		overflow-y: visible;
+		overflow-x: hidden;
+	}
+
+	#aboutbutton,
+	#projectbutton {
+		display: none;
+	}
+	#projectbuttonmobile,
+	#aboutbuttonmobile {
+		width: 50%;
+		float: left;
+		font-size: 30px;
+		display: block;
+	}
+	#aboutbuttonmobile {
+		text-align: right;
+	}
+	#projectbuttonmobile {
+		text-align: left;
+	}
+
 	#portfolio { order: 1; }
 	#blog { order: 2; }
 	#note { order: 3; }
 	#clock { order: 4; }
 	#thoughts { order: 5; }
-	#projectbutton { order: 6; }
-	#aboutbutton { order: 7; }
+	#projectbuttonmobile { order: 6; }
+	#aboutbuttonmobile { order: 7; }
 	#left { order: 8; }
 	#right { order: 9; }
 }
+
 @media screen and (max-width: 531px) {
 		body {
 			max-width: 100%;
-			overflow-x: hidden;
 			overflow-y: auto;
 		}
 		.landing {
 			height: 600px;
 		}
-    .sides,
-		.middle {
+
+    .sides {
 			display: flex;
 			flex-flow: column;
-		}
-		.sides {
 			margin-top: -20px;
+		}
+		.middle {
+			width: auto;
 		}
 		.nav {
 			font-size: 30px;
 			width: 50%;
 			padding: 10px 0 10px 0;
-		}
-		#contact {
-			margin-bottom: 20px;
-		}
-		#project {
-			margin-top: -20px;
-		}
-		#aboutbutton,
-		#projectbutton {
-			display: none;
-		}
-		#projectbuttonmobile,
-		#aboutbuttonmobile {
-			width: 50%;
-			float: left;
-			font-size: 30px;
-			display: block;
-		}
-		#aboutbuttonmobile {
-			text-align: right;
-		}
-		#projectbuttonmobile {
-			text-align: left;
 		}
 		#note {
 			margin-bottom: 20px;
@@ -360,10 +343,16 @@ mark {
 		#thoughts {
 			margin-top: 20px;
 		}
+
+		#contact {
+			margin-bottom: 20px;
+		}
+
 		#projectbuttonmobile button,
 		#aboutbuttonmobile button {
 			font-size: 30px;
 		}
+
 		#note { order: 1; }
 		#clock { order: 2; }
 		#thoughts { order: 3; }
