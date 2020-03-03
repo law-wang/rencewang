@@ -13,15 +13,18 @@ function display_ct() {
 }
 function showAbout() {
   var x = document.getElementById("about");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+  if (x.style.opacity === "0") {
+    x.style.opacity = "1";
   }
   else {
-    x.style.display = "none";
+    x.style.opacity = "0";
   }
 }
 function showAboutMobile() {
   var x = document.getElementById("about");
+  if (x.style.opacity === "0") {
+    x.style.opacity = "1";
+  }
   if (x.style.display === "none") {
     x.style.display = "block";
   }
@@ -37,8 +40,13 @@ function showAboutMobile() {
   }
 }
 function showContact() {
-  document.getElementById("contact").innerHTML = "<a href='https://www.facebook.com/lawrencio.w' target='_blank'>FACEBOOK</a><br><a href='https://www.instagram.com/lawrencio.w/' target='_blank'>INSTAGRAM</a><br><a href='https://www.linkedin.com/in/lawrence-c-w/' target='_blank'>LINKEDIN</a><br><a href='https://open.spotify.com/user/2232mfikorkepi3hqhfpkgdhq?si=V1tFp8yNSGatvckEe4Ia8w' target='_blank'>SPOTIFY</a><br>";
-  //document.getElementById("ct").innerHTML = "王晨玮";
+  var x = document.getElementById("contact");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  }
+  else {
+    x.style.display = "none";
+  }
 }
 function showProject() {
   var x = document.getElementById("project");

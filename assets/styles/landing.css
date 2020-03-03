@@ -157,6 +157,7 @@ button:active {
 		line-height: 25px;
 	width: 100%;
 	max-width: 700px;
+	transition: opacity 0.5s linear;
 }
 #about a,
 #about button {
@@ -179,6 +180,7 @@ button:active {
 	text-align: right;
 	font-size: 22px;
 	line-height: 25px;
+	transition: opacity 0.5s linear;
 }
 #contact a {
 	font-style: normal;
@@ -220,10 +222,6 @@ mark {
 @media only screen and (max-width: 900px) {
 	body {
 		margin-bottom: 40px;
-	}
-	.landing {
-		margin-top: 5%;
-		margin-bottom: 50px;
 	}
 
 	.centerfloat {
@@ -284,6 +282,9 @@ mark {
 		overflow-y: visible;
 		overflow-x: hidden;
 	}
+	#about {
+		display: none;
+	}
 
 	#aboutbutton,
 	#projectbutton {
@@ -320,8 +321,9 @@ mark {
 			overflow-y: auto;
 		}
 		.landing {
+			margin-top: 0;
 			overflow-x: hidden;
-			height: 600px;
+			height: 100%;
 		}
 
     .sides {
