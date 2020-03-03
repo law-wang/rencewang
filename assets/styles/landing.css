@@ -19,8 +19,15 @@ body {
 }
 
 .container {
-	font-family: aktiv-grotesk, "Helvetica Neue", "Arial", sans-serif;
-	color: #000;
+	font-family: aktiv-grotesk, "Helvetica Neue", "Open Sans Bold", "Franklin Gothic", "Arial", sans-serif;
+		font-weight: 500;
+		font-size: 17px;
+		font-style: normal;
+	  color: #000;
+}
+
+.front {
+	z-index: 2;
 }
 
 .landing {
@@ -30,7 +37,6 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	overflow: visible;
-	overflow-x: hidden;
 }
 
 /* Float Boxes */
@@ -54,29 +60,18 @@ body {
 	font-family: aktiv-grotesk-extended, "Helvetica Neue", "Arial", sans-serif;
 		font-weight: 700;
 		font-size: 40px;
+		text-align: center;
 }
 #note {
-	text-align: center;
 	font-family: aktiv-grotesk;
-	font-weight: 300;
+	font-weight: 500;
+	font-size: 25px;
+	line-height: normal;
+	text-transform: capitalize;
 }
 #thoughts {
-	font-weight: 300;
-	/* text-transform: ; */
 	font-weight: 600;
 	font-size: 20px;
-}
-@media only screen and (min-width: 700px) {
-	#aboutbuttonmobile,
-	#aboutbutton,
-	#portfolio {
-		text-align: left;
-	}
-	#projectbuttonmobile,
-	#projectbutton,
-	#blog {
-		text-align: right;
-	}
 }
 
 /* Links and Texts */
@@ -105,7 +100,7 @@ a:hover {
 }
 button {
 	color: #333333;
-	font-family: aktiv-grotesk-extended, "Helvetica Neue", "Open Sans Bold", "Franklin Gothic", "Arial", sans-serif;
+	font-family: aktiv-grotesk-extended, "Helvetica Neue", "Arial", sans-serif;
 		font-weight: 700;
 		font-size: 40px;
 	background-color: rgba(248,248,248,0.0);
@@ -127,72 +122,24 @@ button:hover {
 button:active {
 	outline: none;
 }
-h1 {
-	font-family: neue-haas-grotesk-display, "Helvetica-Neue", sans-serif;
-	font-weight: 200;
-	font-style: normal;
-	font-weight: 200;
-	font-size: 50px;
-	letter-spacing: 6px;
-}
-h2 {
-	font-family: neue-haas-grotesk-display, " Helvetica-Neue", sans-serif;
-	font-weight: 600;
-	font-style: normal;
-	font-weight: 700;
-	font-size: 50px;
-	letter-spacing: 3px;
-}
-h4 {
-	font-weight: 600;
-	font-size: 20px;
-}
-.cursor {
-	width: 30px;
-	height: 30px;
-	background-color: #fff;
-	box-shadow: 0 0 20px #000;
-	border-radius: 50%;
-	position: absolute;
-	z-index: 0;
-}
 
 /* About Block ONLY */
-#left {
-	vertical-align: middle;
-	z-index: 2;
-}
 #about {
-	/*font-family: "jaf-lapture", serif;*/
 	font-family: aktiv-grotesk, "Helvetica Neue", "Helvetica", "Franklin Gothic", "Arial", sans-serif;
 		font-weight: 500;
-		font-style: normal;
+		font-size: 20px;
 		text-align: right;
 		letter-spacing: 1px;
-		line-height: 20px;
-	width: 80%;
+		line-height: 25px;
+	width: 100%;
 		max-width: 700px;
 	height: 100%;
-	margin: 10px auto 20% auto;
+	margin: 10px auto 10px auto;
 	padding: 5px;
 	background-color: rgba(248,248,248,0.7);
 	box-shadow: 0 0 10px 10px rgba(248,248,248,0.7);
 	overflow-x: hidden;
 	overflow-y: auto;
-}
-.eighty {
-	width: 80%;
-	margin-right: 15px;
-	margin-left: auto;
-}
-mark {
-	background-color: #595959;
-	color: #fff;
-	padding-left: 2px;
-	padding-right: 1px;
-}
-:root {
-  --mainColor: #595959;
 }
 #contact {
 	margin-top: 20px;
@@ -200,22 +147,14 @@ mark {
 	font-size: 22px;
 	line-height: 25px;
 }
-#about a {
-	font-family: "Acumin-Pro", sans-serif;
-		font-weight: 700;
-		font-style: italic;
-		font-size: 20px;
-		line-height: 20px;
-	text-decoration: none;
-	background: none;
-	color: #707070;
-}
+#about a,
 #about button {
 	font-family: "Acumin-Pro", sans-serif;
 		font-weight: 700;
 		font-style: italic;
 		font-size: 20px;
-		line-height: 20px;
+		line-height: 25px;
+		text-transform: uppercase;
 	text-decoration: none;
 	background: none;
 	color: #707070;
@@ -228,31 +167,29 @@ mark {
 	font-style: normal;
 	color: #000;
 }
+mark {
+	background-color: #595959;
+	color: #fff;
+	padding-left: 2px;
+	padding-right: 1px;
+}
 #aboutbuttonmobile {
 	display: none;
 }
 
 /* Center Block ONLY */
-#title {
-	font-family: neue-haas-grotesk-display, "Helvetica-Neue", sans-serif;
-	font-weight: 200;
-	font-style: normal;
-	font-weight: 200;
-	font-size: 50px;
-	letter-spacing: 20px;
-	line-height: normal;
-}
 #ct {
-	font-family: odisseia, sans-serif;
-	font-weight: 900;
-	font-style: normal;
-	font-size: 10em;
-	letter-spacing: -10px;
-	margin: 0;
-	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	text-align: center;
+	position: absolute;
+	font-family: odisseia, sans-serif;
+		font-weight: 900;
+		font-style: normal;
+		font-size: 13em;
+		letter-spacing: -10px;
+	margin: 0;
 	z-index: 1;
 	padding: 20px;
 	/* color: #f8f8f8;
@@ -279,39 +216,59 @@ mark {
 }
 
 /* Responsive */
+@media only screen and (min-width: 200px) {
+	#aboutbuttonmobile,
+	#aboutbutton,
+	#portfolio {
+		text-align: left;
+	}
+	#projectbuttonmobile,
+	#projectbutton,
+	#blog {
+		text-align: right;
+	}
+}
 @media only screen and (min-width: 1500px) {
 	#about {
 		line-height: 30px;
 	}
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
 	body {
 		margin-bottom: 40px;
-		cursor: auto;
 		overflow-x: hidden;
 	}
 	.nav {
-		font-size: 20px;
+		width: 50%;
+		margin-bottom: 10px;
 	}
 	.landing {
 		margin-top: 5%;
 		margin-bottom: 50px;
 	}
+	.middle {
+		display: flex;
+		flex-flow: column;
+	}
 	.middle,
 	.sides,
 	#aboutbutton,
 	#projectbutton {
-		width: 100%;
+		width: 50%;
 		height: auto;
 		padding: 0;
 	}
+	#aboutbutton {
+		text-align: right;
+	}
+	#projectbutton {
+		text-align: left;
+	}
 	#ct {
-		width: 90%;
+		width: 80%;
 		position: static;
-		padding: 0;
 		margin-left: auto;
 		margin-right: auto;
-		text-align: center;
 		transform: none;
 		font-size: 4em;
 		letter-spacing: normal;
@@ -327,7 +284,7 @@ mark {
 		margin-bottom: 10%;
 		display: inline;
 		width: 90%;
-		text-align: justify;
+		text-align: left;
 		line-height: 25px;
 		height: auto;
 		overflow-y: visible;
@@ -339,22 +296,31 @@ mark {
 		margin-left: auto;
 		margin-right: auto;
 	}
-	#note h4 {
-		margin: 0;
+	#note {
+		font-size: 20px;
+		margin: 10px 0 0 0;
 		font-weight: 500;
-		font-size: 18px;
 	}
-	#customcursor {
-		display: none;
+	#thoughts {
+		margin: 0;
 	}
+	#portfolio { order: 1; }
+	#blog { order: 2; }
+	#note { order: 3; }
+	#clock { order: 4; }
+	#thoughts { order: 5; }
+	#projectbutton { order: 6; }
+	#aboutbutton { order: 7; }
+	#left { order: 8; }
+	#right { order: 9; }
 }
 @media screen and (max-width: 531px) {
 		body {
 			max-width: 100%;
-			overflow: hidden;
+			overflow-x: hidden;
+			overflow-y: auto;
 		}
 		.landing {
-			margin-top: 5px;
 			height: 600px;
 		}
     .sides,
@@ -366,7 +332,9 @@ mark {
 			margin-top: -20px;
 		}
 		.nav {
+			font-size: 30px;
 			width: 50%;
+			padding: 10px 0 10px 0;
 		}
 		#contact {
 			margin-bottom: 20px;
@@ -382,20 +350,33 @@ mark {
 		#aboutbuttonmobile {
 			width: 50%;
 			float: left;
-			font-size: 20px;
+			font-size: 30px;
 			display: block;
+		}
+		#aboutbuttonmobile {
+			text-align: right;
+		}
+		#projectbuttonmobile {
+			text-align: left;
+		}
+		#note {
+			margin-bottom: 20px;
+			font-size: 15px;
+		}
+		#thoughts {
+			margin-top: 20px;
 		}
 		#projectbuttonmobile button,
 		#aboutbuttonmobile button {
-			font-size: 20px;
+			font-size: 30px;
 		}
 		#note { order: 1; }
 		#clock { order: 2; }
 		#thoughts { order: 3; }
 		#portfolio { order: 4; }
 		#blog { order: 4; }
-		#aboutbuttonmobile { order: 5; }
-    #projectbuttonmobile { order: 6; }
+    #projectbuttonmobile { order: 5; }
+		#aboutbuttonmobile { order: 6; }
 		#left { order: 7; }
 		#right { order: 8; }
 }
