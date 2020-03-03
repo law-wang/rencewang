@@ -5,7 +5,7 @@ body {
 	text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-	background-color: #f8f8f8;
+	/* background-color: #f8f8f8; */
 	cursor: cell;
 	overflow-x: hidden;
 }
@@ -137,8 +137,8 @@ button:active {
 	z-index: 2;
 }
 .sideblocks {
-	background-color: rgba(248,248,248,0.7);
-	box-shadow: 0 0 10px 10px rgba(248,248,248,0.7);
+	background-color: rgba(248,248,248,0.3);
+	box-shadow: 0 0 30px 30px rgba(248,248,248,0.3);
 	overflow-x: hidden;
 	overflow-y: auto;
 	height: 100%;
@@ -170,7 +170,7 @@ button:active {
 		text-transform: uppercase;
 	text-decoration: none;
 	background: none;
-	color: #707070;
+	color: #b3b3b3;
 	padding: 0;
 }
 #about button:hover {
@@ -318,9 +318,11 @@ mark {
 			max-width: 100%;
 			overflow-y: auto;
 		}
+		.overall {
+		}
 		.landing {
 			margin-top: 0;
-			overflow-x: hidden;
+			overflow-x: visible;
 			height: 100%;
 		}
 
@@ -397,6 +399,38 @@ mark {
 	0% { color: #f8f8f8; text-shadow: 0 0 130px #000; }
 	50% { color: #000; text-shadow: 0 0 50px #000; }
 	100% { color: #f8f8f8; text-shadow: 0 0 130px #000; }
+}
+.bgcolor-changer {
+	-webkit-animation: bgcolor-change 10s infinite;
+  -moz-animation: bgcolor-change 10s infinite;
+  -o-animation: bgcolor-change 10s infinite;
+  -ms-animation: bgcolor-change 10s infinite;
+  animation: bgcolor-change 10s infinite;
+}
+@-webkit-keyframes bgcolor-change {
+	0% { background-color: : #f8f8f8; }
+	50% { background-color: #000; }
+	100% { background-color: #f8f8f8; }
+}
+@-moz-keyframes bgcolor-change {
+	0% { background-color: : #f8f8f8; }
+	50% { background-color: #000; }
+	100% { background-color: #f8f8f8; }
+}
+@-ms-keyframes bgcolor-change {
+	0% { background-color: : #f8f8f8; }
+	50% { background-color: #000; }
+	100% { background-color: #f8f8f8; }
+}
+@-o-keyframes bgcolor-change {
+	0% { background-color: : #f8f8f8; }
+	50% { background-color: #000; }
+	100% { background-color: #f8f8f8; }
+}
+@keyframes bgcolor-change {
+	0% { background-color: : #f8f8f8; }
+	50% { background-color: #000; }
+	100% { background-color: #f8f8f8; }
 }
 ::selection {
   background: #ccf5ff;

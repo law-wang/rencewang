@@ -32,10 +32,11 @@
   </script>
 </head>
 
-<body onload = "display_ct(); greeting();">
+<body class="bgcolor-changer" onload = "display_ct(); greeting();">
+<div class="overall">
   <div class="landing container center">
     <div class="nav" id="portfolio"><a href="https://portfolio.rencewang.com">ARTWORK</a></div>
-    <div class="nav" id="note"><h4></h4></div>
+    <div class="nav color-changer" id="note"><h4></h4></div>
     <div class="nav" id="projectbuttonmobile"><button onclick="showProjectMobile()">PROJECTS</button></div>
     <div class="nav" id="projectbutton"><button onclick="showProject()">PROJECTS</button></div>
 
@@ -51,7 +52,6 @@
         </div>
       </div>
     </div>
-    <!-- style="display: none;" -->
 
     <div class="middle centerfloat color-changer" id="clock">
       <span id='ct'></span>
@@ -65,9 +65,10 @@
 
     <div class="nav" id="aboutbuttonmobile"><button onclick="showAboutMobile()">ABOUT</button></div>
     <div class="nav" id="aboutbutton"><button onclick="showAbout()">ABOUT</button></div>
-    <div class="nav" id="thoughts"><p><i>&uarr; a reminder to breathe</i></p></div>
+    <div class="nav color-changer" id="thoughts"><p><i>&uarr; a reminder to breathe</i></p></div>
     <div class="nav" id="blog"><a href="http://blog.rencewang.com">BLOG</a></div>
 
   </div>
+</div>
 </body>
 </html>
