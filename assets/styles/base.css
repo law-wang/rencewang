@@ -1,0 +1,24 @@
+@import "fonts.css";
+
+body {
+	text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+	box-sizing: border-box;
+}
+.center {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	justify-content: center;
+	vertical-align: center;
+	align-items: center;
+}
+.container {
+	position: absolute;
+	width: 90%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	overflow: visible;
+}

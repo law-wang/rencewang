@@ -2,21 +2,17 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
     <title>Lawrence Wang</title>
     <meta name="author" content="Lawrence Wang">
+    <meta name="description" content="">
     <link rel="shortcut icon" type="image/png" href="./assets/images/favicon-1.png"/>
-    <!-- <link rel="shortcut icon" href="assets/image/favicon.png"> -->
-    <script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
+
+    <!-- Resources -->
     <link rel="stylesheet" href="./assets/styles/landing.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156829821-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-156829821-1');
-    </script>
+    <link rel="stylesheet" href="./assets/styles/base.css">
     <script type="text/javascript" src="./assets/scripts/landing.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
@@ -26,28 +22,41 @@
         });
       });
     </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156829821-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-156829821-1');
+    </script>
   </head>
 
   <body onload = "display_ct(); greeting();">
     <!--<div class="cursor" id="customcursor"></div>-->
-    <div class="landing">
+    <div class="landing center">
       <div class="nav" id="portfolio"><a href="https://portfolio.rencewang.com">ARTWORK</a></div>
-      <div class="nav" id="note"><h4></h4></div>
+      <div class="nav" id="note"></div>
       <div class="nav" id="projectbuttonmobile"><button onclick="showProjectMobile()">PROJECTS</button></div>
       <div class="nav" id="projectbutton"><button onclick="showProject()">PROJECTS</button></div>
-      <!-- <div class="nav" id="blog"><a href="http://blog.rencewang.com">BLOG</a></div> -->
-      <div class="sides" id="left">
+      <div class="leftside sides front" id="left">
         <div id="about" style="display: none;">
-          <!-- <div class="eighty"> -->
-          I'm a student at Yale University studying the intersection between computer science and design  (<i>tentatively</i>). I like <mark>basic</mark> things such as watching <mark>Chinese TV</mark>, making Spotify playlists, simping to YouTube videos, collecting <mark>song lyrics</mark>, and yelping <small>unless I'm in New Haven cuz there's nothing here!</small> I have a lot of opinions about random things, and <a href="http://blog.rencewang.com">THIS</a> is where I share my ideas about <mark>popular culture</mark> and my very spontaneous writing. <mark>If you'd like to find out more about the <i>interesting</i> personality I never knew I had</mark>, you can check out my <a href="https://portfolio.rencewang.com">PORTFOLIO</a> or go <button onclick="showContact()">FIND ME</button> in space.
+          I'm a student at <i>Yale</i> studying the <mark>intersection between computer science and design</mark> and potentially the most basic discipline of economics. I like basic things such as watching Chinese TV, <mark>making Spotify playlists</mark>, simping to YouTube videos, <i>collecting song lyrics</i>, and yelping.
+          <br>If you'd like to find out more about the <mark>non-basic</mark> personality I never knew I had, you can check out my basic <a href="http://blog.rencewang.com">opinions</a>, my basic <a href="https://portfolio.rencewang.com">art</a>, or go <button onclick="showContact()">find me</button> while I get lost in space. <button onclick="showPlaylist()">Playlist</button> <br>
           <div id="contact"></div>
-          <!-- </div> -->
         </div>
       </div>
-      <div class="center color-changer" id="clock">
+      <div class="audioblock sides front">
+        <div id="playlist" style="display: none;">
+          <div class="spotify">
+            <iframe src="https://open.spotify.com/embed/playlist/0V1voCFzxqTYszwb8r0BoL" width="250px" height="300px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        </div>
+      </div>
+      <div class="middle color-changer" id="clock">
         <span id='ct'></span>
       </div>
-      <div class="sides" id="right">
+      <div class="rightside sides front" id="right">
         <div id="project" style="display: none;">
           <div id="includedContent"></div>
         </div>
@@ -56,8 +65,6 @@
       <div class="nav" id="aboutbutton"><button onclick="showAbout()">ABOUT</button></div>
       <div class="nav" id="thoughts"><p><i>&uarr; a reminder to breathe</i></p></div>
       <div class="nav" id="blog"><a href="http://blog.rencewang.com">BLOG</a></div>
-      <!-- <div class="nav" id="projectbuttonmobile"><button onclick="showProjectMobile()">PROJECTS</button></div>
-      <div class="nav" id="projectbutton"><button onclick="showProject()">PROJECTS</button></div> -->
     </div>
     <!--<script>
       const cursor = document.querySelector(".cursor");

@@ -1,77 +1,81 @@
-@import url("https://use.typekit.net/xbv3jvp.css");
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-
-html,
 body {
-	overflow-x: hidden;
-	box-sizing: border-box;
-}
-body {
-	text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	font-family: aktiv-grotesk-extended, sans-serif;
 	background-color: #f8f8f8;
-	/*cursor: url("../images/cc.png"), auto;*/
 	cursor: cell;
-	width: 100vw;
-	height: 10vh
+	overflow-x: hidden;
+}
+@media only screen and (max-width: 700px) {
+	body {
+		margin-bottom: 40px;
+	}
 }
 .landing {
 	position: absolute;
 	width: 90%;
 	height: 100%;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	/* margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	right: 0; */
 	display: flex;
 	flex-wrap: wrap;
-  justify-content: center;
-	vertical-align: center;
-	align-items: center;
-	font-family: aktiv-grotesk, "Helvetica Neue", "Open Sans Bold", "Franklin Gothic", "Arial", sans-serif;
-		font-weight: 500;
-		font-size: 17px;
-  	line-height: 20px;
-		font-style: normal;
-	  color: #000;
 	overflow: visible;
+}
+@media only screen and (max-width: 700px) {
+	.landing {
+		margin-top: 5%;
+		margin-bottom: 50px;
+	}
 }
 
 /* Float Boxes */
-.center,
+.middle,
 .sides {
 	float: left;
-	top: 50%;
-	text-align: center;
-	height: 50%;
+	top: 40%;
+	height: 60%;
 }
-.center {
+.leftside {
+	width: 25%;
+}
+.middle {
 	width: 2%;
 }
-.sides {
-	width: 49%;
+.audioblock {
+	width: 25%;
+}
+.rightside {
+	width: 47%;
 }
 .nav {
 	float: left;
 	width: 33%;
-	text-align: center;
-	font-family: aktiv-grotesk-extended, "Helvetica Neue", "Open Sans Bold", "Franklin Gothic", "Arial", sans-serif;
+	font-family: aktiv-grotesk-extended, sans-serif;
 		font-weight: 700;
 		font-size: 40px;
 		line-height: normal;
+		color: #1a1a1a;
 }
+@media only screen and (max-width: 700px) {
+	.nav {
+		font-size: 20px;
+		text-align: center;
+	}
+	.middle,
+	.sides {
+		width: 100%;
+		height: auto;
+	}
+}
+
+/* Nav Elements ONLY */
 #note {
-	font-family: aktiv-grotesk;
-	font-weight: 300;
+	font-family: aktiv-grotesk, sans-serif;
+		text-align: center;
+		font-weight: 300;
+		font-weight: 500;
+	  font-size: 25px;
+	  text-transform: capitalize;
 }
 #thoughts {
+	text-align: center;
 	font-weight: 300;
-	/* text-transform: ; */
-	font-weight: 600;
 	font-size: 20px;
 }
 @media only screen and (min-width: 700px) {
@@ -86,22 +90,32 @@ body {
 		text-align: right;
 	}
 }
+@media only screen and (max-width: 700px) {
+	#aboutbutton,
+	#projectbutton {
+		width: 100%;
+		height: auto;
+		padding: 0;
+	}
+}
 
 /* Links and Texts */
 .nav a,
 #contact a,
-#about a {
+#about a,
+#about button {
 	color: #333333;
 	text-decoration: none;
-	-webkit-transition: all .3s linear;
-	-moz-transition: all .3s linear;
-	-ms-transition: all .3s linear;
-	-o-transition: all .3s linear;
-	transition: all .3s linear;
+		-webkit-transition: all .3s linear;
+		-moz-transition: all .3s linear;
+		-ms-transition: all .3s linear;
+		-o-transition: all .3s linear;
+		transition: all .3s linear;
 }
 .nav a:hover,
 #contact a:hover,
-#about a:hover {
+#about a:hover,
+#about button:hover {
 	color: #fff;
 	text-shadow: 0 0 15px #000;
 }
@@ -135,63 +149,28 @@ button:hover {
 button:active {
 	outline: none;
 }
-h1 {
-	font-family: neue-haas-grotesk-display, "Helvetica-Neue", sans-serif;
-	font-weight: 200;
-	font-style: normal;
-	font-weight: 200;
-	font-size: 50px;
-	letter-spacing: 6px;
-}
-h2 {
-	font-family: neue-haas-grotesk-display, " Helvetica-Neue", sans-serif;
-	font-weight: 600;
-	font-style: normal;
-	font-weight: 700;
-	font-size: 50px;
-	letter-spacing: 3px;
-}
-h4 {
-	font-weight: 600;
-	font-size: 20px;
-}
-.cursor {
-	width: 30px;
-	height: 30px;
-	background-color: #fff;
-	box-shadow: 0 0 20px #000;
-	border-radius: 50%;
-	position: absolute;
-	z-index: 0;
-}
 
 /* About Block ONLY */
-#left {
-	vertical-align: middle;
+.front {
 	z-index: 2;
 }
 #about {
-	/*font-family: "jaf-lapture", serif;*/
 	font-family: aktiv-grotesk, "Helvetica Neue", "Helvetica", "Franklin Gothic", "Arial", sans-serif;
 		font-weight: 500;
 		font-style: normal;
 		text-align: right;
+		font-size: 20px;
 		letter-spacing: 1px;
-		line-height: 20px;
-	width: 80%;
+		line-height: 23px;
+	width: 100%;
 		max-width: 700px;
 	height: 100%;
-	margin: 10px auto 20% auto;
+	margin: 10px auto 10px auto;
 	padding: 5px;
 	background-color: rgba(248,248,248,0.7);
 	box-shadow: 0 0 10px 10px rgba(248,248,248,0.7);
 	overflow-x: hidden;
 	overflow-y: auto;
-}
-.eighty {
-	width: 80%;
-	margin-right: 15px;
-	margin-left: auto;
 }
 mark {
 	background-color: #595959;
@@ -199,38 +178,28 @@ mark {
 	padding-left: 2px;
 	padding-right: 1px;
 }
-:root {
-  --mainColor: #595959;
-}
 #contact {
 	margin-top: 20px;
 	text-align: right;
 	font-size: 22px;
-	line-height: 25px;
 }
-#about a {
-	font-family: "Acumin-Pro", sans-serif;
-		font-weight: 700;
-		font-style: italic;
-		font-size: 20px;
-		line-height: 20px;
-	text-decoration: none;
-	background: none;
-	color: #707070;
-}
+#about a,
 #about button {
 	font-family: "Acumin-Pro", sans-serif;
 		font-weight: 700;
 		font-style: italic;
 		font-size: 20px;
 		line-height: 20px;
+		text-transform: uppercase;
 	text-decoration: none;
 	background: none;
 	color: #707070;
 	padding: 0;
 }
+#contact a:hover,
+#about a:hover,
 #about button:hover {
-	color: #fff;
+	text-shadow: 0 0 15px #000;
 }
 #contact a {
 	font-style: normal;
@@ -240,16 +209,15 @@ mark {
 	display: none;
 }
 
-/* Center Block ONLY */
-#title {
-	font-family: neue-haas-grotesk-display, "Helvetica-Neue", sans-serif;
-	font-weight: 200;
-	font-style: normal;
-	font-weight: 200;
-	font-size: 50px;
-	letter-spacing: 20px;
-	line-height: normal;
+/* Spotify Block ONLY */
+.spotify {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
 }
+
+/* Clock Block ONLY */
 #ct {
 	font-family: odisseia, sans-serif;
 	font-weight: 900;
@@ -268,10 +236,6 @@ mark {
 }
 
 /* Project Block ONLY */
-#right {
-	text-align: left;
-	z-index: 2;
-}
 #project {
 	height: 100%;
 	width: 80%;
@@ -305,7 +269,7 @@ mark {
 		margin-top: 5%;
 		margin-bottom: 50px;
 	}
-	.center,
+	.middle,
 	.sides,
 	#aboutbutton,
 	#projectbutton {
@@ -366,7 +330,7 @@ mark {
 			height: 600px;
 		}
     .sides,
-		.center {
+		.middle {
 			display: flex;
 			flex-flow: column;
 		}
@@ -442,11 +406,24 @@ mark {
 	100% { color: #f8f8f8; text-shadow: 0 0 130px #000; }
 }
 ::selection {
-  background: #c2c2d6; /* WebKit/Blink Browsers */
+  background: #c2c2d6;
 }
+::-moz-selection {
+  background: #c2c2d6;
+}
+
 /* light purple #ccb3ff */
 /* light blue #ccf5ff */
 /* rose #cc6699 */
-::-moz-selection {
-  background: #c2c2d6; /* Gecko Browsers */
-}
+/* body {
+	cursor: url("../images/cc.png"), auto;
+} */
+/* .cursor {
+	width: 30px;
+	height: 30px;
+	background-color: #fff;
+	box-shadow: 0 0 20px #000;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 0;
+} */
