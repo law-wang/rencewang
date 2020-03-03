@@ -7,8 +7,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 	background-color: #f8f8f8;
 	cursor: cell;
+	overflow-x: hidden;
 }
-
 .center {
 	top: 50%;
 	left: 50%;
@@ -16,20 +16,15 @@ body {
 	justify-content: center;
 	vertical-align: center;
 	align-items: center;
+	text-align: center;
 }
-
 .container {
-	font-family: aktiv-grotesk, "Helvetica Neue", "Open Sans Bold", "Franklin Gothic", "Arial", sans-serif;
+	font-family: aktiv-grotesk, "Helvetica Neue", "Arial", sans-serif;
 		font-weight: 500;
 		font-size: 17px;
 		font-style: normal;
 	  color: #000;
 }
-
-.front {
-	z-index: 2;
-}
-
 .landing {
 	position: absolute;
 	width: 90%;
@@ -73,8 +68,17 @@ body {
 	font-weight: 600;
 	font-size: 20px;
 }
+#aboutbuttonmobile {
+	display: none;
+}
+#projectbuttonmobile {
+	display: none;
+}
 
 /* Links and Texts */
+a:hover {
+	cursor: help;
+}
 .nav a,
 #contact a,
 #about a {
@@ -86,17 +90,14 @@ body {
 	-o-transition: all .3s linear;
 	transition: all .3s linear;
 }
-.nav a:hover,
 #contact a:hover,
 #about a:hover {
 	color: #fff;
 	text-shadow: 0 0 15px #000;
 }
 .nav a:hover {
+	color: #fff;
 	text-shadow: 0 0 30px #000;
-}
-a:hover {
-	cursor: help;
 }
 button {
 	color: #333333;
@@ -123,7 +124,22 @@ button:active {
 	outline: none;
 }
 
-/* About Block ONLY */
+/* Side Block ONLY */
+.front {
+	z-index: 2;
+}
+.sideblocks {
+	background-color: rgba(248,248,248,0.7);
+	box-shadow: 0 0 10px 10px rgba(248,248,248,0.7);
+	overflow-x: hidden;
+	overflow-y: auto;
+	height: 100%;
+	padding-right: 15px;
+}
+#project {
+	text-align: left;
+	max-width: 800px;
+}
 #about {
 	font-family: aktiv-grotesk, "Helvetica Neue", "Helvetica", "Franklin Gothic", "Arial", sans-serif;
 		font-weight: 500;
@@ -132,20 +148,7 @@ button:active {
 		letter-spacing: 1px;
 		line-height: 25px;
 	width: 100%;
-		max-width: 700px;
-	height: 100%;
-	margin: 10px auto 10px auto;
-	padding: 5px;
-	background-color: rgba(248,248,248,0.7);
-	box-shadow: 0 0 10px 10px rgba(248,248,248,0.7);
-	overflow-x: hidden;
-	overflow-y: auto;
-}
-#contact {
-	margin-top: 20px;
-	text-align: right;
-	font-size: 22px;
-	line-height: 25px;
+	max-width: 700px;
 }
 #about a,
 #about button {
@@ -163,6 +166,12 @@ button:active {
 #about button:hover {
 	color: #fff;
 }
+#contact {
+	margin-top: 20px;
+	text-align: right;
+	font-size: 22px;
+	line-height: 25px;
+}
 #contact a {
 	font-style: normal;
 	color: #000;
@@ -172,9 +181,6 @@ mark {
 	color: #fff;
 	padding-left: 2px;
 	padding-right: 1px;
-}
-#aboutbuttonmobile {
-	display: none;
 }
 
 /* Center Block ONLY */
@@ -196,25 +202,6 @@ mark {
 	text-shadow: 0 0 130px #000; */
 }
 
-/* Project Block ONLY */
-#right {
-	text-align: left;
-	z-index: 2;
-}
-#project {
-	height: 100%;
-	width: 80%;
-	background-color: rgba(248,248,248,0.7);
-	box-shadow: 0 0 10px 10px rgba(248,248,248,0.7);
-	padding: 5px;
-	max-width: 700px;
-	overflow-x: hidden;
-	overflow-y: auto;
-}
-#projectbuttonmobile {
-	display: none;
-}
-
 /* Responsive */
 @media only screen and (min-width: 200px) {
 	#aboutbuttonmobile,
@@ -233,6 +220,11 @@ mark {
 		line-height: 30px;
 	}
 }
+/* @media only screen and (min-width: 900px) {
+	#about {
+		opacity: 0;
+	}
+} */
 @media only screen and (max-width: 900px) {
 	body {
 		margin-bottom: 40px;
@@ -250,13 +242,15 @@ mark {
 		display: flex;
 		flex-flow: column;
 	}
-	.middle,
 	.sides,
 	#aboutbutton,
 	#projectbutton {
 		width: 50%;
 		height: auto;
 		padding: 0;
+	}
+	.middle {
+		width: 90%;
 	}
 	#aboutbutton {
 		text-align: right;
@@ -381,7 +375,7 @@ mark {
 		#right { order: 8; }
 }
 
-/* Color Changer ONLY */
+/* Design Classes ONLY */
 .color-changer{
 	 -webkit-animation: color-change 7s infinite;
 	 -moz-animation: color-change 7s infinite;
@@ -415,11 +409,15 @@ mark {
 	100% { color: #f8f8f8; text-shadow: 0 0 130px #000; }
 }
 ::selection {
-  background: #c2c2d6; /* WebKit/Blink Browsers */
+  background: #ccf5ff;
 }
-/* light purple #ccb3ff */
-/* light blue #ccf5ff */
-/* rose #cc6699 */
 ::-moz-selection {
-  background: #c2c2d6; /* Gecko Browsers */
+  background: #ccf5ff;
+}
+.hide {
+  opacity:0;
+  transition:opacity 1s linear;*
+}
+.hide:hover {
+  opacity:1;
 }
