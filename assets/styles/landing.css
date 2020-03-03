@@ -9,6 +9,12 @@ body {
 	cursor: cell;
 	overflow-x: hidden;
 }
+.overall {
+	width: 99%;
+	overflow-x: hidden;
+	margin: 0 auto;
+	height: 100%;
+}
 .center {
 	top: 50%;
 	left: 50%;
@@ -90,7 +96,7 @@ a:hover {
 .nav a,
 #contact a,
 #about a {
-	color: #333333;
+	color: #808080;
 	text-decoration: none;
 	-webkit-transition: all .3s linear;
 	-moz-transition: all .3s linear;
@@ -108,7 +114,7 @@ a:hover {
 	text-shadow: 0 0 30px #000;
 }
 button {
-	color: #333333;
+	color: #808080;
 	font-family: aktiv-grotesk-extended, "Helvetica Neue", "Arial", sans-serif;
 		font-weight: 700;
 		font-size: 40px;
@@ -318,12 +324,13 @@ mark {
 			max-width: 100%;
 			overflow-y: auto;
 		}
-		.overall {
-		}
 		.landing {
 			margin-top: 0;
-			overflow-x: visible;
+			overflow-x: hidden;
 			height: 100%;
+		}
+		.landing::-webkit-scrollbar {
+		  display: none;
 		}
 
     .sides {
@@ -350,6 +357,7 @@ mark {
 		#contact {
 			margin-bottom: 20px;
 		}
+
 
 		#projectbuttonmobile button,
 		#aboutbuttonmobile button {
