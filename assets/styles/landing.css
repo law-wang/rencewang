@@ -147,6 +147,7 @@ button:active {
 #project {
 	text-align: left;
 	max-width: 800px;
+	transition: opacity 0.5s linear;
 }
 #about {
 	font-family: aktiv-grotesk, "Helvetica Neue", "Helvetica", "Franklin Gothic", "Arial", sans-serif;
