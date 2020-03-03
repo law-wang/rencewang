@@ -1,70 +1,62 @@
 @import url("https://use.typekit.net/xbv3jvp.css");
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
-html,
-body {
-	overflow-x: hidden;
-	box-sizing: border-box;
-}
 body {
 	text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 	background-color: #f8f8f8;
-	/*cursor: url("../images/cc.png"), auto;*/
 	cursor: cell;
-	width: 100vw;
-	height: 10vh
 }
+
+.center {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	justify-content: center;
+	vertical-align: center;
+	align-items: center;
+}
+
+.container {
+	font-family: aktiv-grotesk, "Helvetica Neue", "Arial", sans-serif;
+	color: #000;
+}
+
 .landing {
 	position: absolute;
 	width: 90%;
 	height: 100%;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	/* margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	right: 0; */
 	display: flex;
 	flex-wrap: wrap;
-  justify-content: center;
-	vertical-align: center;
-	align-items: center;
-	font-family: aktiv-grotesk, "Helvetica Neue", "Open Sans Bold", "Franklin Gothic", "Arial", sans-serif;
-		font-weight: 500;
-		font-size: 17px;
-  	line-height: 20px;
-		font-style: normal;
-	  color: #000;
 	overflow: visible;
+	overflow-x: hidden;
 }
 
 /* Float Boxes */
-.center,
-.sides {
+.centerfloat {
 	float: left;
-	top: 50%;
-	text-align: center;
-	height: 50%;
+	top: 40%;
+	height: 60%;
 }
-.center {
-	width: 2%;
+.middle {
+	width: 20%;
 }
-.sides {
-	width: 49%;
+.leftside {
+	width: 30%;
+}
+.rightside {
+	width: 50%;
 }
 .nav {
 	float: left;
 	width: 33%;
-	text-align: center;
-	font-family: aktiv-grotesk-extended, "Helvetica Neue", "Open Sans Bold", "Franklin Gothic", "Arial", sans-serif;
+	font-family: aktiv-grotesk-extended, "Helvetica Neue", "Arial", sans-serif;
 		font-weight: 700;
 		font-size: 40px;
-		line-height: normal;
 }
 #note {
+	text-align: center;
 	font-family: aktiv-grotesk;
 	font-weight: 300;
 }
@@ -305,7 +297,7 @@ mark {
 		margin-top: 5%;
 		margin-bottom: 50px;
 	}
-	.center,
+	.middle,
 	.sides,
 	#aboutbutton,
 	#projectbutton {
@@ -366,7 +358,7 @@ mark {
 			height: 600px;
 		}
     .sides,
-		.center {
+		.middle {
 			display: flex;
 			flex-flow: column;
 		}
