@@ -320,6 +320,7 @@ mark {
 			overflow-y: auto;
 		}
 		.landing {
+			overflow-x: hidden;
 			height: 600px;
 		}
 
