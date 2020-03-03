@@ -276,14 +276,11 @@ mark {
 	  margin-left: auto;
 	  margin-right: auto;
 		margin-bottom: 10%;
-		display: inline;
+		display: none;
 			text-align: left;
 			line-height: 25px;
 		overflow-y: visible;
 		overflow-x: hidden;
-	}
-	#about {
-		display: none;
 	}
 
 	#aboutbutton,
@@ -405,11 +402,4 @@ mark {
 }
 ::-moz-selection {
   background: #ccf5ff;
-}
-.hide {
-  opacity:0;
-  transition:opacity 1s linear;*
-}
-.hide:hover {
-  opacity:1;
 }

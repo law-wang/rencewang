@@ -50,15 +50,18 @@ function showContact() {
 }
 function showProject() {
   var x = document.getElementById("project");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+  if (x.style.opacity === "0") {
+    x.style.opacity = "1";
   }
   else {
-    x.style.display = "none";
+    x.style.opacity = "0";
   }
 }
 function showProjectMobile() {
   var x = document.getElementById("project");
+  if (x.style.opacity === "0") {
+    x.style.opacity = "1";
+  }
   if (x.style.display === "none") {
     x.style.display = "block";
   }
