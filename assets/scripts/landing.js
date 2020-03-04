@@ -13,6 +13,17 @@ function display_ct() {
 }
 function showAbout() {
   var x = document.getElementById("about");
+  var y = document.getElementById("spotify");
+  if (x.style.opacity === "0") {
+    x.style.opacity = "1";
+  }
+  else {
+    x.style.opacity = "0";
+    y.style.opacity = "0";
+  }
+}
+function showPlaylist() {
+  var x = document.getElementById("spotify");
   if (x.style.opacity === "0") {
     x.style.opacity = "1";
   }
