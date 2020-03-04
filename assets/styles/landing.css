@@ -50,9 +50,6 @@ body {
 	width: 3%;
 }
 .middle-playlist {
-	float: left;
-	top: 50%;
-	height: 60%;
 	width: 27%;
 }
 .leftside {
@@ -306,7 +303,7 @@ mark {
 	}
 	#about,
 	#project,
-	#spotify {	
+	#spotify {
 		display: none;
 	}
 
