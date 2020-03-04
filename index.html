@@ -33,13 +33,16 @@
 </head>
 
 <body class="bgcolor-changer" onload = "display_ct(); greeting();">
-<div class="overall">
+  <div class="overall">
   <div class="landing container center">
+
+    <!-- TOP BLOCK -->
     <div class="nav" id="portfolio"><a href="https://portfolio.rencewang.com">ARTWORK</a></div>
     <div class="nav color-changer" id="note"><h4></h4></div>
     <div class="nav" id="projectbuttonmobile"><button onclick="showProjectMobile()">PROJECTS</button></div>
     <div class="nav" id="projectbutton"><button onclick="showProject()">PROJECTS</button></div>
 
+    <!-- ABOUT BLOCK -->
     <div class="leftside centerfloat front" id="left">
       <div class="sideblocks" id="about" style="opacity: 0;">
         I'm a student at <i>Yale</i> studying the <mark>intersection between computer science and design</mark> and potentially the most basic discipline of economics. I like basic things such as <mark>watching Chinese TV</mark>, making Spotify <button onclick="showPlaylist()">playlists</button>, simping to YouTube videos, <i>collecting song lyrics</i>, and yelping.
@@ -53,28 +56,41 @@
       </div>
     </div>
 
+    <!-- PLAYLIST BLOCK -->
     <div class="middle-playlist centerfloat front" id="mobile-playlist">
       <div class="sideblocks" id="spotify" style="opacity: 0;">
       <iframe src="https://open.spotify.com/embed/playlist/0V1voCFzxqTYszwb8r0BoL" width="100%" height="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </div>
     </div>
 
+    <!-- CLOCK BLOCK -->
     <div class="middle centerfloat color-changer" id="clock">
       <span id='ct'></span>
     </div>
 
+    <!-- PROJECT BLOCK -->
     <div class="rightside centerfloat front" id="right">
       <div class="sideblocks" id="project" style="opacity: 0;">
         <div id="includedContent"></div>
       </div>
     </div>
 
+    <!-- BOTTOM BLOCK -->
     <div class="nav" id="aboutbuttonmobile"><button onclick="showAboutMobile()">ABOUT</button></div>
     <div class="nav" id="aboutbutton"><button onclick="showAbout()">ABOUT</button></div>
     <div class="nav color-changer" id="thoughts"><p><i>&uarr; a reminder to breathe</i></p></div>
     <div class="nav" id="blog"><a href="http://blog.rencewang.com">BLOG</a></div>
 
   </div>
-</div>
+  </div>
+
+  <!-- LOADER -->
+  <div class="loader"></div>
+  <script>
+    $(window).on("load", function() {
+      $(".loader").fadeOut("500000");
+    });
+  </script>
+
 </body>
 </html>
