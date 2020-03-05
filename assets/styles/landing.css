@@ -401,27 +401,27 @@ mark {
 }
 @-webkit-keyframes color-change {
 	0% { color: #f8f8f8; text-shadow: 0 0 130px #000; }
-	50% { color: #000; text-shadow: 0 0 50px #000; }
+	50% { color: #000; text-shadow: 0 0 150px #f8f8f8; }
 	100% { color: #f8f8f8; text-shadow: 0 0 130px #000; }
 }
 @-moz-keyframes color-change {
 	0% { color: #f8f8f8; text-shadow: 0 0 130px #000; }
-	50% { color: #000; text-shadow: 0 0 50px #000; }
+	50% { color: #000; text-shadow: 0 0 150px #f8f8f8; }
 	100% { color: #f8f8f8; text-shadow: 0 0 130px #000; }
 }
 @-ms-keyframes color-change {
 	0% { color: #f8f8f8; text-shadow: 0 0 130px #000; }
-	50% { color: #000; text-shadow: 0 0 50px #000; }
+	50% { color: #000; text-shadow: 0 0 150px #f8f8f8; }
 	100% { color: #f8f8f8; text-shadow: 0 0 130px #000; }
 }
 @-o-keyframes color-change {
 	0% { color: #f8f8f8; text-shadow: 0 0 130px #000; }
-	50% { color: #000; text-shadow: 0 0 50px #000; }
+	50% { color: #000; text-shadow: 0 0 150px #f8f8f8; }
 	100% { color: #f8f8f8; text-shadow: 0 0 130px #000; }
 }
 @keyframes color-change {
 	0% { color: #f8f8f8; text-shadow: 0 0 130px #000; }
-	50% { color: #000; text-shadow: 0 0 50px #000; }
+	50% { color: #000; text-shadow: 0 0 150px #f8f8f8; }
 	100% { color: #f8f8f8; text-shadow: 0 0 130px #000; }
 }
 .bgcolor-changer {
