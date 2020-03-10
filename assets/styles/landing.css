@@ -309,6 +309,9 @@ mark {
 		overflow-y: visible;
 		overflow-x: hidden;
 	}
+	#mobile-playlist {
+		display: none;
+	}
 
 	#aboutbutton,
 	#projectbutton {
@@ -337,7 +340,7 @@ mark {
 	#aboutbuttonmobile { order: 7; }
 	#left { order: 8; }
 	#right { order: 9; }
-	#mobile-playlist { order: 10; }
+	#mobile-playlist { order: 10; display: none;}
 }
 
 @media screen and (max-width: 531px) {
@@ -429,24 +432,6 @@ mark {
 	50% { color: #404040; }
 	100% { color: #f8f8f8; }
 }
-::selection {
-  background: #ccf5ff;
-}
-::-moz-selection {
-  background: #ccf5ff;
-}
-
-/* Preloader ONLY */
-.loader {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	background-color: #ccc;
-}
-
-/* Deprecate */
 .bgcolor-changer {
 	-webkit-animation: bgcolor-change 10s infinite;
   -moz-animation: bgcolor-change 10s infinite;
@@ -479,7 +464,25 @@ mark {
 	50% { background-color: #000; }
 	100% { background-color: #f8f8f8; }
 }
-.color-changer{
+::selection {
+  background: #ccf5ff;
+}
+::-moz-selection {
+  background: #ccf5ff;
+}
+
+/* Preloader ONLY */
+.loader {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #ccc;
+}
+
+/* Deprecate */
+/* .color-changer{
 	 -webkit-animation: color-change 7s infinite;
 	 -moz-animation: color-change 7s infinite;
 	 -o-animation: color-change 7s infinite;
@@ -510,4 +513,4 @@ mark {
 	0% { color: #f8f8f8; text-shadow: 0 0 130px #000; }
 	50% { color: #000; text-shadow: 0 0 150px #f8f8f8; }
 	100% { color: #f8f8f8; text-shadow: 0 0 130px #000; }
-}
+} */

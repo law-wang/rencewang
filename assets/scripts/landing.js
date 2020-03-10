@@ -14,7 +14,7 @@ function display_ct() {
 }
 
 function show(_target) {
-  let x = document.getElementById(_target);
+  var x = document.getElementById(_target);
 
   if (x.classList.contains('hidden')) {
     x.classList.remove('hidden');
@@ -23,27 +23,23 @@ function show(_target) {
   else {
     x.classList.add('visuallyhidden');
     x.addEventListener('transitionend', function(e) { x.classList.add('hidden'); }, { capture: false, once: true, passive: false });
+    if (_target == 'about') {
+      let y = document.getElementById('spotify');
+      y.classList.add('visuallyhidden');
+      y.addEventListener('transitionend', function(e) { y.classList.add('hidden'); }, { capture: false, once: true, passive: false });
+    }
   }
 }
 
-function showAbout() {
-  let x = document.getElementById('about');
-  let y = document.getElementById('spotify');
-
-  if (x.classList.contains('hidden')) {
-    x.classList.remove('hidden');
-    setTimeout( function () { x.classList.remove('visuallyhidden'); }, 20);
+function showMobile(_target) {
+  if (_target == 'about') {
+    var x = document.getElementById('about');
+    var y = document.getElementById('project');
   }
-  else {
-    x.classList.add('visuallyhidden');
-    x.addEventListener('transitionend', function(e) { x.classList.add('hidden'); }, { capture: false, once: true, passive: false });
-    y.classList.add('visuallyhidden');
-    y.addEventListener('transitionend', function(e) { y.classList.add('hidden'); }, { capture: false, once: true, passive: false });
+  else if (_target == 'project') {
+    var x = document.getElementById('project');
+    var y = document.getElementById('about');
   }
-}
-
-function showAboutMobile() {
-  let x = document.getElementById('about');
   if (x.classList.contains('hidden')) {
     x.classList.remove('hidden');
     x.classList.remove('visuallyhidden');
@@ -52,27 +48,6 @@ function showAboutMobile() {
     x.classList.add('visuallyhidden');
     x.classList.add('hidden');
   }
-  let y = document.getElementById('project');
-  if (y.classList.contains('hidden')) {
-  }
-  else {
-    y.classList.add('visuallyhidden');
-    y.classList.add('hidden');
-  }
-}
-
-function showProjectMobile() {
-
-  let x = document.getElementById('project');
-  if (x.classList.contains('hidden')) {
-    x.classList.remove('hidden');
-    x.classList.remove('visuallyhidden');
-  }
-  else {
-    x.classList.add('visuallyhidden');
-    x.classList.add('hidden');
-  }
-  let y = document.getElementById('about');
   if (y.classList.contains('hidden')) {
   }
   else {
