@@ -399,22 +399,22 @@ mark {
 	-ms-animation: text-change 7s infinite;
 	animation: text-change 7s infinite;
 }
-@-webkit-keyframes color-change {
+@-webkit-keyframes text-change {
 	0% { color: #f8f8f8; }
 	50% { color: #404040; }
 	100% { color: #f8f8f8; }
 }
-@-moz-keyframes color-change {
+@-moz-keyframes text-change {
 	0% { color: #f8f8f8; }
 	50% { color: #404040; }
 	100% { color: #f8f8f8; }
 }
-@-ms-keyframes color-change {
+@-ms-keyframes text-change {
 	0% { color: #f8f8f8; }
 	50% { color: #404040; }
 	100% { color: #f8f8f8; }
 }
-@-o-keyframes color-change {
+@-o-keyframes text-change {
 	0% { color: #f8f8f8; }
 	50% { color: #404040; }
 	100% { color: #f8f8f8; }
