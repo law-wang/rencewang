@@ -14,6 +14,15 @@
   <link rel="stylesheet" href="./assets/styles/landing.css">
   <script type="text/javascript" src="./assets/scripts/landing.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <style>
+      body
+      {
+        background-image: url('./assets/images/bgcolorchanger.gif');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+    </style>
   <script>
     $(document).ready(function(){
       $(function(){
@@ -31,14 +40,14 @@
     gtag('config', 'UA-156829821-1');
   </script>
 </head>
-
-<body class="bgcolor-changer" onload = "display_ct(); greeting();">
+<!-- display_ct();  -->
+<body onload = "display_ct(); greeting();">
   <div class="overall">
   <div class="landing container center">
 
     <!-- TOP BLOCK -->
     <div class="nav" id="portfolio"><a href="https://portfolio.rencewang.com">ARTWORK</a></div>
-    <div class="nav color-changer" id="note"><h4></h4></div>
+    <div class="nav text-changer" id="note"><h4></h4></div>
     <div class="nav" id="projectbuttonmobile"><button onclick="showProjectMobile()">PROJECTS</button></div>
     <div class="nav" id="projectbutton"><button onclick="showProject()">PROJECTS</button></div>
 
@@ -64,7 +73,7 @@
     </div>
 
     <!-- CLOCK BLOCK -->
-    <div class="middle centerfloat color-changer" id="clock">
+    <div class="middle centerfloat text-changer" id="clock">
       <span id='ct'></span>
     </div>
 
@@ -78,7 +87,7 @@
     <!-- BOTTOM BLOCK -->
     <div class="nav" id="aboutbuttonmobile"><button onclick="showAboutMobile()">ABOUT</button></div>
     <div class="nav" id="aboutbutton"><button onclick="showAbout()">ABOUT</button></div>
-    <div class="nav color-changer" id="thoughts"><p><i>&uarr; a reminder to breathe</i></p></div>
+    <div class="nav text-changer" id="thoughts"><p><i>&uarr; a reminder to breathe</i></p></div>
     <div class="nav" id="blog"><a href="http://blog.rencewang.com">BLOG</a></div>
 
   </div>
