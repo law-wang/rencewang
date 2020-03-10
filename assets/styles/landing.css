@@ -151,7 +151,7 @@ button:active {
 	overflow-x: hidden;
 	overflow-y: auto;
 	height: 100%;
-	transition: opacity 0.5s linear;
+	transition: all 0.5s linear;
 }
 #project {
 	text-align: left;
@@ -203,6 +203,14 @@ mark {
 	padding-left: 2px;
 	padding-right: 1px;
 }
+.hidden {
+	display: none;
+}
+  
+.visuallyhidden {
+	opacity: 0;
+}
+  
 
 /* Center Block ONLY */
 #spotify {
@@ -450,27 +458,27 @@ mark {
   animation: bgcolor-change 10s infinite;
 }
 @-webkit-keyframes bgcolor-change {
-	0% { background-color: : #f8f8f8; }
+	0% { background-color: #f8f8f8; }
 	50% { background-color: #000; }
 	100% { background-color: #f8f8f8; }
 }
 @-moz-keyframes bgcolor-change {
-	0% { background-color: : #f8f8f8; }
+	0% { background-color: #f8f8f8; }
 	50% { background-color: #000; }
 	100% { background-color: #f8f8f8; }
 }
 @-ms-keyframes bgcolor-change {
-	0% { background-color: : #f8f8f8; }
+	0% { background-color: #f8f8f8; }
 	50% { background-color: #000; }
 	100% { background-color: #f8f8f8; }
 }
 @-o-keyframes bgcolor-change {
-	0% { background-color: : #f8f8f8; }
+	0% { background-color: #f8f8f8; }
 	50% { background-color: #000; }
 	100% { background-color: #f8f8f8; }
 }
 @keyframes bgcolor-change {
-	0% { background-color: : #f8f8f8; }
+	0% { background-color: #f8f8f8; }
 	50% { background-color: #000; }
 	100% { background-color: #f8f8f8; }
 }

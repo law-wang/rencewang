@@ -2,6 +2,7 @@ function display_c(){
   var refresh=1000; // Refresh rate in milli seconds
   mytime=setTimeout('display_ct()',refresh)
 }
+
 function display_ct() {
   var x = new Date();
   var hours = (x.getHours() < 10? '0' : '') + x.getHours();
@@ -11,26 +12,46 @@ function display_ct() {
   document.getElementById('ct').innerHTML = time;
   display_c();
 }
+
+function show(_target) {
+  let x = document.getElementById(_target);
+
+  if (x.classList.contains('hidden')) {
+    x.classList.remove('hidden');
+    setTimeout( function () { x.classList.remove('visuallyhidden'); }, 20);
+  } 
+  else {
+    x.classList.add('visuallyhidden');    
+    x.addEventListener('transitionend', function(e) { x.classList.add('hidden'); }, { capture: false, once: true, passive: false });
+  }
+}
+
 function showAbout() {
-  var x = document.getElementById("about");
-  var y = document.getElementById("spotify");
-  if (x.style.opacity === "0") {
-    x.style.opacity = "1";
-  }
+  let x = document.getElementById('about');
+  let y = document.getElementById('spotify');
+
+  if (x.classList.contains('hidden')) {
+    x.classList.remove('hidden');
+    setTimeout( function () { x.classList.remove('visuallyhidden'); }, 20);
+  } 
   else {
-    x.style.opacity = "0";
-    y.style.opacity = "0";
+    x.classList.add('visuallyhidden');    
+    x.addEventListener('transitionend', function(e) { x.classList.add('hidden'); }, { capture: false, once: true, passive: false });
+    y.classList.add('visuallyhidden');    
+    y.addEventListener('transitionend', function(e) { y.classList.add('hidden'); }, { capture: false, once: true, passive: false });
   }
 }
-function showPlaylist() {
-  var x = document.getElementById("spotify");
-  if (x.style.opacity === "0") {
-    x.style.opacity = "1";
+
+function showContact() {
+  var x = document.getElementById("contact");
+  if (x.style.display === "none") {
+    x.style.display = "block";
   }
   else {
-    x.style.opacity = "0";
+    x.style.display = "none";
   }
 }
+
 function showAboutMobile() {
   var x = document.getElementById("about");
   if (x.style.opacity === "0") {
@@ -50,24 +71,7 @@ function showAboutMobile() {
     y.style.display = "none";
   }
 }
-function showContact() {
-  var x = document.getElementById("contact");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  }
-  else {
-    x.style.display = "none";
-  }
-}
-function showProject() {
-  var x = document.getElementById("project");
-  if (x.style.opacity === "0") {
-    x.style.opacity = "1";
-  }
-  else {
-    x.style.opacity = "0";
-  }
-}
+
 function showProjectMobile() {
   var x = document.getElementById("project");
   if (x.style.opacity === "0") {
@@ -87,6 +91,7 @@ function showProjectMobile() {
     y.style.display = "none";
   }
 }
+
 function greeting() {
   var day = new Date();
   var hr = day.getHours();
