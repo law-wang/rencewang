@@ -19,9 +19,9 @@ function show(_target) {
   if (x.classList.contains('hidden')) {
     x.classList.remove('hidden');
     setTimeout( function () { x.classList.remove('visuallyhidden'); }, 20);
-  } 
+  }
   else {
-    x.classList.add('visuallyhidden');    
+    x.classList.add('visuallyhidden');
     x.addEventListener('transitionend', function(e) { x.classList.add('hidden'); }, { capture: false, once: true, passive: false });
   }
 }
@@ -33,62 +33,51 @@ function showAbout() {
   if (x.classList.contains('hidden')) {
     x.classList.remove('hidden');
     setTimeout( function () { x.classList.remove('visuallyhidden'); }, 20);
-  } 
+  }
   else {
-    x.classList.add('visuallyhidden');    
+    x.classList.add('visuallyhidden');
     x.addEventListener('transitionend', function(e) { x.classList.add('hidden'); }, { capture: false, once: true, passive: false });
-    y.classList.add('visuallyhidden');    
+    y.classList.add('visuallyhidden');
     y.addEventListener('transitionend', function(e) { y.classList.add('hidden'); }, { capture: false, once: true, passive: false });
   }
 }
 
-function showContact() {
-  var x = document.getElementById("contact");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  }
-  else {
-    x.style.display = "none";
-  }
-}
-
 function showAboutMobile() {
-  var x = document.getElementById("about");
-  if (x.style.opacity === "0") {
-    x.style.opacity = "1";
-  }
-  if (x.style.display === "none") {
-    x.style.display = "block";
+  let x = document.getElementById('about');
+  if (x.classList.contains('hidden')) {
+    x.classList.remove('hidden');
+    x.classList.remove('visuallyhidden');
   }
   else {
-    x.style.display = "none";
+    x.classList.add('visuallyhidden');
+    x.classList.add('hidden');
   }
-  var y = document.getElementById("project");
-  if (y.style.display === "block") {
-    y.style.display = "none";
+  let y = document.getElementById('project');
+  if (y.classList.contains('hidden')) {
   }
   else {
-    y.style.display = "none";
+    y.classList.add('visuallyhidden');
+    y.classList.add('hidden');
   }
 }
 
 function showProjectMobile() {
-  var x = document.getElementById("project");
-  if (x.style.opacity === "0") {
-    x.style.opacity = "1";
-  }
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  }
-  else {
-    x.style.display = "none";
-  }
-  var y = document.getElementById("about");
-  if (y.style.display === "block") {
-    y.style.display = "none";
+
+  let x = document.getElementById('project');
+  if (x.classList.contains('hidden')) {
+    x.classList.remove('hidden');
+    x.classList.remove('visuallyhidden');
   }
   else {
-    y.style.display = "none";
+    x.classList.add('visuallyhidden');
+    x.classList.add('hidden');
+  }
+  let y = document.getElementById('about');
+  if (y.classList.contains('hidden')) {
+  }
+  else {
+    y.classList.add('visuallyhidden');
+    y.classList.add('hidden');
   }
 }
 
