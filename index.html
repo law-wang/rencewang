@@ -49,13 +49,13 @@
     <div class="nav" id="portfolio"><a href="https://portfolio.rencewang.com">ARTWORK</a></div>
     <div class="nav text-changer" id="note"><h4></h4></div>
     <div class="nav" id="projectbuttonmobile"><button onclick="showMobile('project')">PROJECTS</button></div>
-    <div class="nav" id="projectbutton"><button onclick="show('project')">PROJECTS</button></div>
+    <div class="nav" id="projectbutton"><button onclick="show('project', 'right')">PROJECTS</button></div>
 
     <!-- ABOUT BLOCK -->
     <div class="leftside centerfloat back" id="left">
       <div class="sideblocks hidden visuallyhidden" id="about">
-        I'm a student at <i>Yale</i> studying the <mark>intersection between computer science and design</mark> and potentially the most basic discipline of economics. I like basic things such as <mark>watching Chinese TV</mark>, making Spotify <button onclick="show('spotify')">playlists</button>, simping to YouTube videos, <i>collecting song lyrics</i>, and yelping.
-        <br>If you'd like to find out more about the <mark>non-basic</mark> personality I never knew I had, you can check out my basic <a href="http://blog.rencewang.com">opinions</a>, my basic <a href="https://portfolio.rencewang.com">art</a>, or go <button onclick="show('contact')">find me</button> while I get lost in space. <br><br>
+        I'm a student at <i>Yale</i> studying the <mark>intersection between computer science and design</mark> and potentially the most basic discipline of economics. I like basic things such as <mark>watching Chinese TV</mark>, making Spotify <button onclick="show('spotify', 'mobile-playlist')">playlists</button>, simping to YouTube videos, <i>collecting song lyrics</i>, and yelping.
+        <br>If you'd like to find out more about the <mark>non-basic</mark> personality I never knew I had, you can check out my basic <a href="http://blog.rencewang.com">opinions</a>, my basic <a href="https://portfolio.rencewang.com">art</a>, or go <button onclick="show('contact', null)">find me</button> while I get lost in space. <br><br>
         <div class="hidden visuallyhidden" id="contact">
           <a href='https://www.facebook.com/lawrencio.w' target='_blank'>FACEBOOK</a><br>
           <a href='https://www.instagram.com/lawrencio.w/' target='_blank'>INSTAGRAM</a><br>
@@ -86,7 +86,7 @@
 
     <!-- BOTTOM NAV -->
     <div class="nav" id="aboutbuttonmobile"><button onclick="showMobile('about')">ABOUT</button></div>
-    <div class="nav" id="aboutbutton"><button onclick="show('about')">ABOUT</button></div>
+    <div class="nav" id="aboutbutton"><button onclick="show('about', 'left')">ABOUT</button></div>
     <div class="nav text-changer" id="thoughts"><p><i>&uarr; a reminder to breathe</i></p></div>
     <div class="nav" id="blog"><a href="http://blog.rencewang.com">BLOG</a></div>
 

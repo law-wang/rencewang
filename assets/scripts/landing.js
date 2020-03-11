@@ -20,15 +20,23 @@ function show(_target, _upperLevel) {
   if (x.classList.contains('hidden')) {
     x.classList.remove('hidden');
     setTimeout( function () { x.classList.remove('visuallyhidden'); }, 20);
+    container.classList.remove('back');
+    container.classList.add('front');
   }
   else {
     x.classList.add('visuallyhidden');
     x.addEventListener('transitionend', function(e) { x.classList.add('hidden'); }, { capture: false, once: true, passive: false });
     if (_target == 'about') {
       let y = document.getElementById('spotify');
+      let z = document.getElementById('mobile-playlist');
+
       y.classList.add('visuallyhidden');
       y.addEventListener('transitionend', function(e) { y.classList.add('hidden'); }, { capture: false, once: true, passive: false });
+      z.classList.remove('front');
+      z.classList.add('back');
     }
+    container.classList.remove('front');
+    container.classList.add('back');
   }
 }
 
