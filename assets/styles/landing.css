@@ -230,6 +230,7 @@ mark {
 	width: 1000px;
 	/* color: #f8f8f8;
 	text-shadow: 0 0 130px #000; */
+	transition: opacity 1s ease;
 }
 #ct {
 	font-family: odisseia, sans-serif;
@@ -247,16 +248,16 @@ mark {
 		letter-spacing: normal;
 }
 div#clock span#ct {
-	display: inline;
+	opacity: 1;
 }
 div#clock:hover span#ct {
-	display: none;
+	opacity: 0;
 }
 div#clock span#name {
-	display: none;
+	opacity: 0;
 }
 div#clock:hover span#name {
-	display: inline;
+	opacity: 1;
 }
 
 /* Responsive ONLY */
