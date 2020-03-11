@@ -308,7 +308,7 @@ div#clock:hover span#name {
 		height: auto;
 		padding: 0;
 	}
-	#ct {
+	#ct, #name {
 		width: 100%;
 		position: static;
 		margin-left: auto;
@@ -369,59 +369,59 @@ div#clock:hover span#name {
 }
 
 @media screen and (max-width: 531px) {
-		body {
-			max-width: 100%;
-			overflow-y: auto;
-		}
-		.landing {
-			margin-top: 0;
-			overflow-x: hidden;
-			height: 100%;
-		}
-		.landing::-webkit-scrollbar {
-		  display: none;
-		}
+	body {
+		max-width: 100%;
+		overflow-y: auto;
+	}
+	.landing {
+		margin-top: 0;
+		overflow-x: hidden;
+		height: 100%;
+	}
+	.landing::-webkit-scrollbar {
+		display: none;
+	}
 
-    .sides {
-			display: flex;
-			flex-flow: column;
-			margin-top: -20px;
-		}
-		.middle {
-			width: auto;
-		}
-		.nav {
-			font-size: 30px;
-			width: 50%;
-			padding: 10px 0 10px 0;
-			overflow: visible;
-		}
-		#note {
-			margin-bottom: 20px;
-			font-size: 15px;
-		}
-		#thoughts {
-			margin-top: 20px;
-		}
-		#contact {
-			margin-bottom: 20px;
-		}
+	.sides {
+		display: flex;
+		flex-flow: column;
+		margin-top: -20px;
+	}
+	.middle {
+		width: auto;
+	}
+	.nav {
+		font-size: 30px;
+		width: 50%;
+		padding: 10px 0 10px 0;
+		overflow: visible;
+	}
+	#note {
+		margin-bottom: 20px;
+		font-size: 15px;
+	}
+	#thoughts {
+		margin-top: 20px;
+	}
+	#contact {
+		margin-bottom: 20px;
+	}
 
-		#projectbuttonmobile button,
-		#aboutbuttonmobile button {
-			font-size: 30px;
-			overflow: visible;
-		}
+	#projectbuttonmobile button,
+	#aboutbuttonmobile button {
+		font-size: 30px;
+		overflow: visible;
+	}
 
-		#note { order: 1; }
-		#clock { order: 2; }
-		#thoughts { order: 3; }
-		#portfolio { order: 4; }
-		#blog { order: 4; }
-    #projectbuttonmobile { order: 5; }
-		#aboutbuttonmobile { order: 6; }
-		#left { order: 7; }
-		#right { order: 8; }
+	#note { order: 1; }
+	#clock { order: 2; }
+	#thoughts { order: 3; }
+	#portfolio { order: 4; }
+	#blog { order: 4; }
+	#projectbuttonmobile { order: 5; }
+	#aboutbuttonmobile { order: 6; }
+	#left { order: 7; }
+	#right { order: 8; }
 }
 
 /* Design Classes ONLY */
