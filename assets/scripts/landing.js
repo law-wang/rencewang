@@ -13,8 +13,9 @@ function display_ct() {
   display_c();
 }
 
-function show(_target) {
-  var x = document.getElementById(_target);
+function show(_target, _upperLevel) {
+  let x = document.getElementById(_target);
+  let container = document.getElementById(_upperLevel);
 
   if (x.classList.contains('hidden')) {
     x.classList.remove('hidden');

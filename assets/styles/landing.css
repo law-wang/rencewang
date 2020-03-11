@@ -145,6 +145,9 @@ button:active {
 .front {
 	z-index: 2;
 }
+.back {
+	z-index: -1;
+}
 .sideblocks {
 	background-color: rgba(248,248,248,0.5);
 	box-shadow: 0 0 30px 30px rgba(248,248,248,0.5);
@@ -206,11 +209,9 @@ mark {
 .hidden {
 	display: none;
 }
-
 .visuallyhidden {
 	opacity: 0;
 }
-
 
 /* Center Block ONLY */
 #spotify {
@@ -224,7 +225,7 @@ mark {
 	text-align: center;
 	position: absolute;
 	margin: 0;
-	z-index: 1;
+	z-index: 0;
 	padding: 20px;
 	width: 1000px;
 	/* color: #f8f8f8;
