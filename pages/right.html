@@ -3,125 +3,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style type="text/css">
-        @import url("https://use.typekit.net/xbv3jvp.css");
-        body {
-          font-family: aktiv-grotesk, "Helvetica Neue", "Arial", sans-serif;
-        		font-weight: 500;
-        		font-size: 14px;
-          	line-height: 20px;
-          	font-style: normal;
-          	font-weight: 500;
-          	color: #000;
-        }
-        h1 {
-        	font-family: aktiv-grotesk-extended, "Helvetica-Neue", sans-serif;
-          	font-weight: 700;
-          	font-style: normal;
-          	font-size: 50px;
-          	letter-spacing: 5px;
-          	line-height: normal;
-        	padding-top: 10px;
-        	padding-bottom: 5px;
-        	margin-bottom: 0;
-        }
-        .project {
-          font-family: aktiv-grotesk-extended, "Helvetica Neue", "Arial", sans-serif;
-            font-size: 30px;
-            letter-spacing: 2px;
-          	font-weight: bold;
-          	text-transform: uppercase;
-          	line-height: normal;
-          max-width: 700px;
-          padding: 15px 0 0 0;
-          margin: 0;
-        }
-        .project a:hover {
-          font-style: italic;
-          cursor: help;
-        }
-        .description {
-        	margin: 10px auto 10px 0;
-        	max-width: 700px;
-          	font-weight: lighter;
-          	font-size: 18px;
-          	text-align: justify;
-          	letter-spacing: 0.5px;
-        }
-        a {
-        	text-decoration: none;
-        	color: #1a1a1a;
-        }
-        .more {
-          font-family: aktiv-grotesk-extended, "Helvetica Neue", "Arial", sans-serif;
-            text-transform: uppercase;
-            text-align: right;
-            font-size: 20px;
-            font-weight: bold;
-          max-width: 700px;
-          margin-top: 10px;
-          margin-bottom: 10px;
-        }
-        .more a {
-        	color: #595959;
-        	text-decoration: none;
-        	-webkit-transition: all .3s linear;
-        	-moz-transition: all .3s linear;
-        	-ms-transition: all .3s linear;
-        	-o-transition: all .3s linear;
-        	transition: all .3s linear;
-        }
-        .more a:hover {
-        	color: #fff;
-        	text-shadow: 0 0 15px #000;
-        	cursor: help;
-        }
-        .archive {
-          color: #1a1a1a;
-          font-size: 25px;
-          text-transform: lowercase;
-          font-weight: bold;
-          letter-spacing: 3px;
-          padding: 10px 0 5px 0;
-          margin: 0;
-        }
-        .archive a:hover {
-          font-style: italic;
-          letter-spacing: 3px;
-          cursor: help;
-        }
-        @media screen and (max-width: 531px) {
-          .description,
-          .more {
-            width: 100%;
-          }
-          .project {
-            font-size: 20px;
-          }
-        }
-    </style>
+    <link rel="stylesheet" href="../assets/styles/project.css">
   </head>
 
   <body>
-      <div class="projectcontainer">
+      <h1 class="accordionPiece">PROJECTS</h1>
 
-        <div class="project"><a href="https://thepolitic.org/hopefuls/" target="_blank">The Politic: Presidential Hopefuls</a></div>
-        <div class="description">As a part of the Tech Team, I helped develop this minisite showcasing <b>The Yale Politic's</b> <span class="emphasize">features & interviews</span> conducted over the past years about the <b>presidential candidates</b> for the 2020 election.</div>
-        <div class="more"><a href="https://www.rencewang.com/projects/pages/hopefuls">Read More</a></div>
-
-        <div class="project"><a href="">10 Albums of The 2010s</a></div>
-        <div class="description">The 2010s was a defining decade in <b>music</b>. It marked the beginning of my exploration through <span class="emphasize">genres and artists</span>, and I wanted to commemorate the decade with  a "book" bound in a <b>jewel box</b> and printed on an 19th century <b>printing press</b>.</div>
-        <div class="more"><a href="https://www.rencewang.com/projects/pages/10of10s">READ MORE</a></div>
-
-        <div class="project">Lover: a Virtual Experience</div>
-        <div class="description">Inspired by <span class="emphasize"><b>Lover</b></span>, I wanted to create a virtual reality experience that would capture the feeling of getting lost in the songs. The result was a floating <span class="emphasize">dreamscape</span> that enhances the listening experience.</div>
-        <div class="more"><a href="https://www.rencewang.com/projects/pages/lover">READ MORE</a></div>
-
-        <h1>FUN* STUFF</h1>
-        <div class="archive"><a href="https://www.rencewang.com/pages/inmydefense" target="_blank">In My Defense</a></div>
-        <div class="archive"><a href="https://thoughts.rencewang.com">In My Head</a></div>
-        <div class="archive"><a href="">Coming Soon</a></div>
-
+      <div class="accordionPiece">
+        <input type="checkbox" id="prez" name="accordion" />
+        <label for="prez">Presidential Hopefuls</label>
+        <div>
+            <p>As a part of the Tech Team, I helped develop this minisite showcasing The Yale Politic's features & interviews conducted over the past years about the presidential candidates for the 2020 election.</p>
+            <div class="more"><a href="https://www.rencewang.com/projects/pages/hopefuls">READ MORE</a></div>
+            <div class="more"><a href="https://thepolitic.org/hopefuls/">SEE IT IN ACTION &#8663;</a></div>
+        </div>
       </div>
+
+      <div class="accordionPiece">
+        <input type="checkbox" id="album" name="accordion" />
+        <label for="album">10 Albums of The 2010s</label>
+        <div>
+            <p>The 2010s was a defining decade in music. It marked the beginning of my exploration through genres and artists, and I wanted to commemorate the decade with  a "book" bound in a jewel box and printed on an 19th century printing press.</p>
+            <div class="more"><a href="https://www.rencewang.com/projects/pages/10of10s">READ MORE</a></div>
+            <div class="more"><a href="">SEE IT IN ACTION &#8663;</a></div>
+        </div>
+      </div>
+
+      <div class="accordionPiece">
+        <input type="checkbox" id="lover" name="accordion" />
+        <label for="lover">Lover: a Virtual Experience</label>
+        <div>
+            <p>Inspired by Lover, I wanted to create a virtual reality experience that would capture the feeling of getting lost in the songs. The result was a floating dreamscape that enhances the listening experience</p>
+            <div class="more"><a href="https://www.rencewang.com/projects/pages/lover">READ MORE</a></div>
+            <div class="more"><a href="">SEE IT IN ACTION &#8663;</a></div>
+        </div>
+      </div>
+
+      <h1>FUN* STUFF</h1>
+      <div class="archive"><a href="https://www.rencewang.com/pages/inmydefense" target="_blank">In My Defense</a></div>
+      <div class="archive"><a href="https://thoughts.rencewang.com">In My Head</a></div>
+      <div class="archive"><a href="">Coming Soon</a></div>
+
   </body>
 </html>

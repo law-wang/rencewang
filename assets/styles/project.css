@@ -1,0 +1,180 @@
+@import url("https://use.typekit.net/xbv3jvp.css");
+
+/* Reset Sheet ONLY */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* General Styles */
+body {
+    margin: 0 auto;
+}
+h1 {
+  font-family: aktiv-grotesk-extended, "Helvetica-Neue", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    letter-spacing: 2px;
+    line-height: normal;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin-bottom: 0;
+}
+
+.more {
+  font-family: aktiv-grotesk-extended, "Helvetica Neue", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+  margin: 10px auto 5px auto;
+}
+.more a {
+  color: #595959;
+  text-decoration: none;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -ms-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+}
+.more a:hover {
+  color: #000;
+  cursor: help;
+}
+.archive {
+  font-family: aktiv-grotesk-extended, "Helvetica Neue", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: lowercase;
+    letter-spacing: 3px;
+  margin: 0;
+  padding: 10px 0 5px 0;
+}
+.archive a {
+  color: #1a1a1a;
+  text-decoration: none;
+}
+.archive a:hover {
+  font-style: italic;
+  cursor: help;
+}
+
+/* Accordion Styles ONLY */
+.accordionPiece {
+  border-bottom: 2px solid #000;
+  max-width: 700px;
+}
+input {
+  display: none;
+}
+input ~ div {
+  height: 1px;
+  overflow: hidden;
+}
+input ~ div > * {
+  opacity: 0;
+  transition: 0.5s;
+  font-family: aktiv-grotesk, "Helvetica Neue", "Arial", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: normal;
+    color: #000;
+}
+input + label {
+  display: block;
+  position: relative;
+  padding: 20px 0;
+  font-family: aktiv-grotesk-extended, "Helvetica Neue", "Arial", sans-serif;
+    font-size: 27px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+input + label:after,
+input + label:before {
+  position: absolute;
+  background: black;
+  content: '';
+  transform: rotate(0deg);
+  transition: 0.5s;
+  top: 50%;
+}
+input + label:after {
+  right: 4px;
+  height: 10px;
+  width: 2px;
+  margin-top: -5px;
+}
+input + label:before {
+  right: 0;
+  width: 10px;
+  height: 2px;
+  margin-top: -1px;
+}
+label:hover {
+  cursor: help;
+}
+input:checked ~ div {
+  height: auto;
+  margin: 0 0 20px;
+}
+input:checked ~ div > * {
+  opacity: 1;
+  transition: 0.5s;
+  transition-delay: 0.25s;
+}
+input:checked + label:before {
+  transform: rotate(360deg);
+  transition: 1s;
+}
+input:checked + label:after {
+  transform: rotate(450deg);
+  transition: 1s;
+}
+@media screen and (max-width: 531px) {
+  input + label {
+    font-size: 20px;
+  }
+}

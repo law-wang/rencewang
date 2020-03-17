@@ -318,6 +318,9 @@ div#clock:hover span#name {
 		letter-spacing: normal;
 		text-shadow: 0 0 50px #000;
 	}
+	#name {
+		display: none;
+	}
 	#about,
 	#project,
 	#spotify {
