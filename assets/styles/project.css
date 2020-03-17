@@ -54,7 +54,7 @@ h1 {
     font-weight: 700;
     font-style: normal;
     font-size: 50px;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     line-height: normal;
   padding-top: 10px;
   padding-bottom: 5px;
@@ -101,7 +101,7 @@ h1 {
 
 /* Accordion Styles ONLY */
 .accordionPiece {
-  border-bottom: 2px solid #888;
+  border-bottom: 2px solid #000;
   max-width: 700px;
 }
 input {
