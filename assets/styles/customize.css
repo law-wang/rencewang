@@ -1,0 +1,209 @@
+@import url("https://use.typekit.net/xbv3jvp.css");
+
+@font-face {
+    font-family: 'colus';
+    src: url(/assets/fonts/Colus-Regular.ttf);
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'SentyWEN2017';
+    src: url(/assets/fonts/SentyWEN2017.ttf);
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'HanyiSentyTANG';
+    src: url(/assets/fonts/HanyiSentyTang.ttf);
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'GT-america-extended';
+    src: url(/assets/fonts/GT-America-Extended-Medium.otf);
+    font-style: normal;
+    font-weight: 500;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+.featured-title,
+.category-title,
+.archive-title {
+    font-family: orpheuspro, serif;
+        font-style: italic;
+        font-size: 40px;
+        letter-spacing: 2px;
+}
+
+.glowlink {
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.glowlink a {
+    color: #595959;
+    text-decoration: none;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.glowlink a:hover {
+    color: #fff !important;
+    text-shadow: 0 0 15px #000;
+    cursor: help;
+}
+@media (min-width: 992px) {
+  .navlist {
+    margin-left: auto;
+  }
+}
+
+.feature-heading {
+    font-family: campaign, "Helvetica-Neue", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        text-align: justify;
+    color: #000;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.feature-heading:hover {
+    color: #737373 !important;
+    cursor: help;
+}
+.catblock {
+    font-family: aktiv-grotesk-extended, sans-serif;
+    color: #000 !important;
+}
+.catblock a {
+    color: #000;
+}
+.catblock a:hover {
+    color: #000 !important;
+    cursor: help;
+}
+.loop-card-title a {
+    font-family: aktiv-grotesk-extended, sans-serif;
+    color: #000;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.loop-card-title a:hover {
+    color: #737373 !important;
+    cursor: help;
+}
+@media (min-width: 767px) {
+  .loop-card-fixed-height {
+  }
+}
+@media (min-width: 992px) {
+  .navbar-justify-content-between {
+    justify-content: space-between !important;
+  }
+}
+.sticky-title {
+    font-family: aktiv-grotesk-extended, sans-serif;
+    color: #1a1a1a;
+}
+.sticky-excerpt{
+    width: 98%;
+    font-family: jaf-lapture, serif;
+        font-style: normal;
+        font-size: 18px;
+}
+.sticky-button {
+    text-align: right;
+    color:#1a1a1a;
+    font-family: aktiv-grotesk-extended, sans-serif;
+        font-style: normal;
+        text-transform: uppercase;
+        font-size: 40px;
+        font-weight: 700;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.sticky-button:hover {
+    color: #f8f8f8 !important;
+    text-shadow: 0 0 70px #000;
+    cursor: help;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.footer-text {
+    font-family: orpheuspro, serif;
+    font-style: italic;
+    letter-spacing: 2px;
+    color: #000 !important;
+}
+.about-author-name {
+    font-family: aktiv-grotesk-extended, sans-serif;
+      font-size: 28px;
+      font-weight: 700;
+}
+.aboutblock {
+    font-family: aktiv-grotesk-extended, sans-serif;
+}
+.aboutblock a {
+    color: #000 !important;
+    font-weight: 700;
+}
+.aboutblock a:hover {
+    cursor: help;
+}
+.article-post {
+    font-family: jaf-lapture, aktiv-grotesk, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.excerpt {
+    font-family: jaf-lapture, serif;
+}
+
+.text-muted a:hover {
+    cursor: help;
+}
+.alright {
+    text-align: right !important;
+}
+
+.bg-main {
+    background-color: #f8f8f8;
+}
+.bg-feature {
+    background-color: #cccccc;
+}
+
+@media (max-width: 991.98px) {
+    .about {
+        display: none;
+    }
+    /* .article-post {
+        text-align: justify;
+    } */
+}
+@media (max-width: 731px) {
+    .loop-card-image {
+        display: none;
+    }
+}

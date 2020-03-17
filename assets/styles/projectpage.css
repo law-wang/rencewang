@@ -1,0 +1,66 @@
+@import url("https://use.typekit.net/xbv3jvp.css");
+
+body {
+    overflow-x: hidden;
+}
+
+.project-content {
+	max-width: 900px;
+    margin: 50px auto;
+    font-family: aktiv-grotesk-extended, Helvetica, sans-serif;
+}
+.project-nav {
+    margin-bottom: 0;
+    padding: 0;
+    width: 80%;
+    margin-left: 0;
+}
+.project-nav-links {
+    font-family: aktiv-grotesk-extended, Helvetica, sans-serif;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.project-nav-links a {
+    color: #999;
+}
+.project-nav-links a:hover{
+    color: #000;
+}
+.project-nav-des {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.proj-nav-item {
+    font-weight: 900;
+}
+
+.header-nav {
+    text-align: left;
+    font-size: 40px;
+    font-weight: bold;
+}
+.header-left {
+   text-align: left; 
+   font-size: 60px;
+   font-weight: bold;
+} 
+
+.image-hopefuls {
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.description {
+	margin: 10px auto 0 auto;
+	font-family: baskerville-urw, whitman-display, orpheuspro, aktiv-grotesk, serif;
+	font-weight: 400;
+	font-size: 18px;
+	font-style: italic;
+	text-align: justify;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
