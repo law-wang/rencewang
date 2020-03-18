@@ -78,7 +78,7 @@ h1 {
   transition: all .3s linear;
 }
 .more a:hover {
-  color: #fff;
+  color: #999;
   cursor: help;
 }
 .archive {
